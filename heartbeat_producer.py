@@ -22,14 +22,14 @@ def generate_heart_beat():
     return {
         "ids":random.choice(ids),
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "heart_beat": random.randint(60, 100) # Heart beat per minute
+        "heartbeat": random.randint(60, 100) # Heart beat per minute
     }
 
 while True:
     # Generate a heart beat value
-    heart_beat= generate_heart_beat()
+    heartbeat= generate_heart_beat()
     # Send the heart beat value to the Kafka topic
-    producer.send('heart_beat', value= heart_beat)
-    print(f"Produced: {heart_beat}")
+    producer.send('heartbeat', value= heartbeat)
+    print(f"Produced: {heartbeat}")
     # Sleep for 1 second before generating the next value
     time.sleep(1)
