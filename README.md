@@ -18,12 +18,15 @@ Real-Time-Customer-Heart-Beat-Monitoring-System/
 │   ├── heartbeat_consumer.py      # Consumes data from Kafka, validates, and inserts into PostgreSQL
 │   ├── heartbeat_producer.py      # Generates synthetic heartbeat data and sends to Kafka
 │   ├── heartbeat_dashboard.py     # Streamlit dashboard to visualize heartbeat data
-│   ├── docker-compose.yml         # Docker Compose for PostgreSQL container
 │   └── postgres_setup.sql         # SQL script to set up heartbeat_data table in PostgreSQL
 |
 |__ Readme.md                      # This file
 |
 |__ requirements.txt               # contains all libraries to be installed
+|
+|__ .env                           # contains postgres credentials
+|
+|── docker-compose.yml         # Docker Compose for PostgreSQL container
 ```
 
 ---

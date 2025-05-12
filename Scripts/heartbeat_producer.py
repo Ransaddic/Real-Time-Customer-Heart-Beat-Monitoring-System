@@ -7,6 +7,8 @@ import random
 from faker import Faker
 from datetime import datetime
 
+
+
 # Setup logging
 logging.basicConfig(
     filename='logs/producer.log',

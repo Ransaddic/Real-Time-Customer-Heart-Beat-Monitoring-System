@@ -3,7 +3,17 @@ from kafka import KafkaConsumer
 import psycopg2
 import json
 from datetime import datetime
+from dotenv import load_dotenv
+import os
 
+load_dotenv()  # Load variables from .env file
+
+# Now access them
+dbname = os.getenv("DB_NAME")
+user = os.getenv("DB_USER")
+password = os.getenv("DB_PASSWORD")
+host = os.getenv("DB_HOST")
+port = os.getenv("DB_PORT")
 # Setup logging
 logging.basicConfig(
     filename='logs/consumer.log',
@@ -16,11 +26,11 @@ logging.basicConfig(
 def connect_to_db():
     try:
         conn = psycopg2.connect(
-            dbname='heart_monitor',
-            user='postgres',
-            password='postgres',
-            host='localhost',
-            port='5433'
+            dbname= dbname,
+            user= user,
+            password=password,
+            host=host,
+            port= port
         )
         logging.info("Connected to PostgreSQL database.")
         return conn

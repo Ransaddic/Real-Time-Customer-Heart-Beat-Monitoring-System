@@ -5,6 +5,17 @@ import psycopg2
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load variables from .env file
+
+# Now access them
+dbname = os.getenv("DB_NAME")
+user = os.getenv("DB_USER")
+password = os.getenv("DB_PASSWORD")
+host = os.getenv("DB_HOST")
+port = os.getenv("DB_PORT")
 
 # Page config
 st.set_page_config(page_title="Heart Rate Monitor", page_icon="❤️", layout="wide")
@@ -13,11 +24,11 @@ st.title("📈 Real-Time Customer Heart Rate Monitor")
 # PostgreSQL connection (no caching)
 def get_connection():
     return psycopg2.connect(
-        dbname='heart_monitor',
-        user='postgres',
-        password='postgres',
-        host='localhost',
-        port='5433'
+        dbname=dbname,
+        user=user,
+        password=password,
+        host=host,
+        port=port
     )
 
 # Load data
