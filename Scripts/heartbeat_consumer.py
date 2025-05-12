@@ -1,23 +1,38 @@
-# Import the necessary libraries
+import logging
 from kafka import KafkaConsumer
 import psycopg2
 import json
 from datetime import datetime
 
+# Setup logging
+logging.basicConfig(
+    filename='logs/consumer.log',
+    filemode='a',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
 # PostgreSQL connection setup
 def connect_to_db():
-    return psycopg2.connect(
-        dbname='heart_monitor',
-        user='postgres',
-        password='postgres',
-        host='localhost',
-        port='5433'
-    )
+    try:
+        conn = psycopg2.connect(
+            dbname='heart_monitor',
+            user='postgres',
+            password='postgres',
+            host='localhost',
+            port='5433'
+        )
+        logging.info("Connected to PostgreSQL database.")
+        return conn
+    except Exception as e:
+        logging.error(f"Database connection failed: {e}")
+        raise
 
 # Validate heart rate range
 def is_valid(data):
     return 40 <= data.get('heart_rate', 0) <= 180
 
+# Insert data into the database
 def insert_heartbeat(cursor, data):
     cursor.execute("""
         INSERT INTO heartbeat_data (customer_id, timestamp, heart_rate)
@@ -27,9 +42,10 @@ def insert_heartbeat(cursor, data):
         datetime.fromisoformat(data['timestamp']),
         data['heart_rate']
     ))
+    logging.info(f"Inserted data: {data}")
 
 def main():
-    print("Starting Kafka Consumer...")
+    logging.info("Starting Kafka Consumer...")
 
     conn = connect_to_db()
     cursor = conn.cursor()
@@ -46,23 +62,23 @@ def main():
     try:
         for message in consumer:
             data = message.value
-            print("Received:", data)
+            logging.info(f"Received: {data}")
 
             if is_valid(data):
                 try:
                     insert_heartbeat(cursor, data)
                     conn.commit()
                 except Exception as db_err:
-                    print("DB Insert Error:", db_err)
+                    logging.error(f"DB Insert Error: {db_err}")
             else:
-                print("Invalid data skipped:", data)
+                logging.warning(f"Invalid data skipped: {data}")
     except KeyboardInterrupt:
-        print("Consumer stopped by user.")
+        logging.info("Consumer stopped by user.")
     finally:
         cursor.close()
         conn.close()
         consumer.close()
-        print("Resources cleaned up.")
+        logging.info("Resources cleaned up and consumer shut down.")
 
 if __name__ == "__main__":
     main()

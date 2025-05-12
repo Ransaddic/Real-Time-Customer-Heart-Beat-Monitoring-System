@@ -1,0 +1,1075 @@
+2025-05-12 00:22:56,502 - INFO - Starting Kafka Consumer...
+2025-05-12 00:22:56,683 - INFO - Connected to PostgreSQL database.
+2025-05-12 00:22:56,703 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-05-12 00:22:56,737 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Broker version identified as 2.6
+2025-05-12 00:22:56,738 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-05-12 00:22:56,741 - INFO - Updating subscribed topics to: ('heartbeat',)
+2025-05-12 00:22:56,753 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-05-12 00:22:56,754 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-05-12 00:22:56,755 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-05-12 00:22:56,875 - INFO - Coordinator for group/heartbeat_group is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-05-12 00:22:56,875 - INFO - Discovered coordinator coordinator-1 for group heartbeat_group
+2025-05-12 00:22:56,875 - INFO - Starting new heartbeat thread
+2025-05-12 00:22:56,878 - INFO - Revoking previously assigned partitions set() for group heartbeat_group
+2025-05-12 00:22:56,880 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-05-12 00:22:56,881 - INFO - <BrokerConnection client_id=kafka-python-2.2.3, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-05-12 00:22:56,983 - INFO - (Re-)joining group heartbeat_group
+2025-05-12 00:22:57,032 - INFO - (Re-)joining group heartbeat_group
+2025-05-12 00:23:00,107 - INFO - Elected group leader -- performing partition assignments using range
+2025-05-12 00:23:00,222 - INFO - Successfully joined group heartbeat_group with generation 21
+2025-05-12 00:23:00,223 - INFO - Updated partition assignment: [TopicPartition(topic='heartbeat', partition=0)]
+2025-05-12 00:23:00,224 - INFO - Setting newly assigned partitions {TopicPartition(topic='heartbeat', partition=0)} for group heartbeat_group
+2025-05-12 00:23:00,404 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:05.128824', 'heart_rate': 98}
+2025-05-12 00:23:00,810 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:05.128824', 'heart_rate': 98}
+2025-05-12 00:23:00,860 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:06.392851', 'heart_rate': 89}
+2025-05-12 00:23:00,866 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:06.392851', 'heart_rate': 89}
+2025-05-12 00:23:00,904 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:07.396782', 'heart_rate': 66}
+2025-05-12 00:23:00,911 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:07.396782', 'heart_rate': 66}
+2025-05-12 00:23:01,038 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:08.400020', 'heart_rate': 68}
+2025-05-12 00:23:01,044 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:08.400020', 'heart_rate': 68}
+2025-05-12 00:23:01,115 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:09.404016', 'heart_rate': 86}
+2025-05-12 00:23:01,122 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:09.404016', 'heart_rate': 86}
+2025-05-12 00:23:01,192 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:10.411270', 'heart_rate': 100}
+2025-05-12 00:23:01,198 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:10.411270', 'heart_rate': 100}
+2025-05-12 00:23:01,237 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:11.414469', 'heart_rate': 61}
+2025-05-12 00:23:01,244 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:11.414469', 'heart_rate': 61}
+2025-05-12 00:23:01,280 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:12.418007', 'heart_rate': 72}
+2025-05-12 00:23:01,287 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:12.418007', 'heart_rate': 72}
+2025-05-12 00:23:01,324 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:13.425186', 'heart_rate': 97}
+2025-05-12 00:23:01,330 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:13.425186', 'heart_rate': 97}
+2025-05-12 00:23:01,361 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:14.436561', 'heart_rate': 83}
+2025-05-12 00:23:01,367 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:14.436561', 'heart_rate': 83}
+2025-05-12 00:23:01,402 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:15.443033', 'heart_rate': 79}
+2025-05-12 00:23:01,409 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:15.443033', 'heart_rate': 79}
+2025-05-12 00:23:01,439 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:16.464756', 'heart_rate': 75}
+2025-05-12 00:23:01,445 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:16.464756', 'heart_rate': 75}
+2025-05-12 00:23:01,479 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:17.467694', 'heart_rate': 60}
+2025-05-12 00:23:01,485 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:17.467694', 'heart_rate': 60}
+2025-05-12 00:23:01,516 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:18.470890', 'heart_rate': 71}
+2025-05-12 00:23:01,524 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:18.470890', 'heart_rate': 71}
+2025-05-12 00:23:01,560 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:19.473609', 'heart_rate': 98}
+2025-05-12 00:23:01,571 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:19.473609', 'heart_rate': 98}
+2025-05-12 00:23:01,605 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:20.479199', 'heart_rate': 79}
+2025-05-12 00:23:01,614 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:20.479199', 'heart_rate': 79}
+2025-05-12 00:23:01,646 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:21.483998', 'heart_rate': 75}
+2025-05-12 00:23:01,653 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:21.483998', 'heart_rate': 75}
+2025-05-12 00:23:01,712 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:22.486605', 'heart_rate': 70}
+2025-05-12 00:23:01,719 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:22.486605', 'heart_rate': 70}
+2025-05-12 00:23:01,768 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:23.490332', 'heart_rate': 68}
+2025-05-12 00:23:01,775 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:23.490332', 'heart_rate': 68}
+2025-05-12 00:23:01,845 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:24.495819', 'heart_rate': 93}
+2025-05-12 00:23:01,853 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:24.495819', 'heart_rate': 93}
+2025-05-12 00:23:01,889 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:25.499385', 'heart_rate': 87}
+2025-05-12 00:23:01,895 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:25.499385', 'heart_rate': 87}
+2025-05-12 00:23:01,923 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:26.503177', 'heart_rate': 82}
+2025-05-12 00:23:01,931 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:26.503177', 'heart_rate': 82}
+2025-05-12 00:23:01,959 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:27.508355', 'heart_rate': 84}
+2025-05-12 00:23:01,966 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:27.508355', 'heart_rate': 84}
+2025-05-12 00:23:02,000 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:28.511391', 'heart_rate': 89}
+2025-05-12 00:23:02,006 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:28.511391', 'heart_rate': 89}
+2025-05-12 00:23:02,037 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:29.517252', 'heart_rate': 99}
+2025-05-12 00:23:02,042 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:29.517252', 'heart_rate': 99}
+2025-05-12 00:23:02,080 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:30.528789', 'heart_rate': 98}
+2025-05-12 00:23:02,086 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:30.528789', 'heart_rate': 98}
+2025-05-12 00:23:02,115 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:31.536721', 'heart_rate': 90}
+2025-05-12 00:23:02,120 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:31.536721', 'heart_rate': 90}
+2025-05-12 00:23:02,155 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:32.541370', 'heart_rate': 91}
+2025-05-12 00:23:02,161 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:32.541370', 'heart_rate': 91}
+2025-05-12 00:23:02,192 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:33.544754', 'heart_rate': 91}
+2025-05-12 00:23:02,198 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:33.544754', 'heart_rate': 91}
+2025-05-12 00:23:02,232 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:34.556911', 'heart_rate': 88}
+2025-05-12 00:23:02,239 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:34.556911', 'heart_rate': 88}
+2025-05-12 00:23:02,270 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:35.561045', 'heart_rate': 70}
+2025-05-12 00:23:02,276 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:35.561045', 'heart_rate': 70}
+2025-05-12 00:23:02,421 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:36.570920', 'heart_rate': 65}
+2025-05-12 00:23:02,428 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:36.570920', 'heart_rate': 65}
+2025-05-12 00:23:02,458 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:37.574066', 'heart_rate': 94}
+2025-05-12 00:23:02,464 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:37.574066', 'heart_rate': 94}
+2025-05-12 00:23:02,498 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:38.577595', 'heart_rate': 79}
+2025-05-12 00:23:02,504 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:38.577595', 'heart_rate': 79}
+2025-05-12 00:23:02,536 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:39.580628', 'heart_rate': 93}
+2025-05-12 00:23:02,542 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:39.580628', 'heart_rate': 93}
+2025-05-12 00:23:02,576 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:40.588003', 'heart_rate': 88}
+2025-05-12 00:23:02,583 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:40.588003', 'heart_rate': 88}
+2025-05-12 00:23:02,613 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:41.591963', 'heart_rate': 60}
+2025-05-12 00:23:02,620 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:41.591963', 'heart_rate': 60}
+2025-05-12 00:23:02,654 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:42.595686', 'heart_rate': 98}
+2025-05-12 00:23:02,661 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:42.595686', 'heart_rate': 98}
+2025-05-12 00:23:02,691 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:43.599780', 'heart_rate': 83}
+2025-05-12 00:23:02,699 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:43.599780', 'heart_rate': 83}
+2025-05-12 00:23:02,732 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:44.607376', 'heart_rate': 96}
+2025-05-12 00:23:02,740 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:44.607376', 'heart_rate': 96}
+2025-05-12 00:23:02,768 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:45.611628', 'heart_rate': 63}
+2025-05-12 00:23:02,776 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:45.611628', 'heart_rate': 63}
+2025-05-12 00:23:02,809 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:46.615719', 'heart_rate': 81}
+2025-05-12 00:23:02,817 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:46.615719', 'heart_rate': 81}
+2025-05-12 00:23:02,845 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:47.621273', 'heart_rate': 82}
+2025-05-12 00:23:02,854 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:47.621273', 'heart_rate': 82}
+2025-05-12 00:23:02,886 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:48.624978', 'heart_rate': 77}
+2025-05-12 00:23:02,893 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:48.624978', 'heart_rate': 77}
+2025-05-12 00:23:02,924 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:49.631324', 'heart_rate': 83}
+2025-05-12 00:23:02,932 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:49.631324', 'heart_rate': 83}
+2025-05-12 00:23:02,965 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:50.635618', 'heart_rate': 97}
+2025-05-12 00:23:02,972 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:50.635618', 'heart_rate': 97}
+2025-05-12 00:23:03,001 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:51.643195', 'heart_rate': 82}
+2025-05-12 00:23:03,007 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:51.643195', 'heart_rate': 82}
+2025-05-12 00:23:03,041 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:52.646379', 'heart_rate': 87}
+2025-05-12 00:23:03,047 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:52.646379', 'heart_rate': 87}
+2025-05-12 00:23:03,078 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:53.649917', 'heart_rate': 92}
+2025-05-12 00:23:03,085 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:21:53.649917', 'heart_rate': 92}
+2025-05-12 00:23:03,119 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:54.654298', 'heart_rate': 84}
+2025-05-12 00:23:03,125 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:21:54.654298', 'heart_rate': 84}
+2025-05-12 00:23:03,155 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:55.664161', 'heart_rate': 73}
+2025-05-12 00:23:03,161 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:55.664161', 'heart_rate': 73}
+2025-05-12 00:23:03,196 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:56.666781', 'heart_rate': 78}
+2025-05-12 00:23:03,204 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:56.666781', 'heart_rate': 78}
+2025-05-12 00:23:03,233 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:57.669350', 'heart_rate': 71}
+2025-05-12 00:23:03,264 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:21:57.669350', 'heart_rate': 71}
+2025-05-12 00:23:03,318 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:58.672722', 'heart_rate': 85}
+2025-05-12 00:23:03,326 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:21:58.672722', 'heart_rate': 85}
+2025-05-12 00:23:03,422 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:59.679943', 'heart_rate': 96}
+2025-05-12 00:23:03,430 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:21:59.679943', 'heart_rate': 96}
+2025-05-12 00:23:03,484 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:00.682530', 'heart_rate': 70}
+2025-05-12 00:23:03,491 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:00.682530', 'heart_rate': 70}
+2025-05-12 00:23:03,543 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:01.687002', 'heart_rate': 88}
+2025-05-12 00:23:03,550 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:01.687002', 'heart_rate': 88}
+2025-05-12 00:23:03,610 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:02.690846', 'heart_rate': 87}
+2025-05-12 00:23:03,617 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:02.690846', 'heart_rate': 87}
+2025-05-12 00:23:03,684 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:03.697044', 'heart_rate': 68}
+2025-05-12 00:23:03,693 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:03.697044', 'heart_rate': 68}
+2025-05-12 00:23:03,820 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:04.701353', 'heart_rate': 68}
+2025-05-12 00:23:03,831 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:04.701353', 'heart_rate': 68}
+2025-05-12 00:23:03,993 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:05.705099', 'heart_rate': 76}
+2025-05-12 00:23:03,999 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:05.705099', 'heart_rate': 76}
+2025-05-12 00:23:04,065 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:06.715799', 'heart_rate': 87}
+2025-05-12 00:23:04,073 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:06.715799', 'heart_rate': 87}
+2025-05-12 00:23:04,130 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:07.720388', 'heart_rate': 93}
+2025-05-12 00:23:04,137 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:07.720388', 'heart_rate': 93}
+2025-05-12 00:23:04,220 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:08.723472', 'heart_rate': 90}
+2025-05-12 00:23:04,227 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:08.723472', 'heart_rate': 90}
+2025-05-12 00:23:04,429 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:09.730698', 'heart_rate': 89}
+2025-05-12 00:23:04,439 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:09.730698', 'heart_rate': 89}
+2025-05-12 00:23:04,496 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:10.803976', 'heart_rate': 75}
+2025-05-12 00:23:04,505 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:10.803976', 'heart_rate': 75}
+2025-05-12 00:23:04,570 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:11.809707', 'heart_rate': 89}
+2025-05-12 00:23:04,576 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:11.809707', 'heart_rate': 89}
+2025-05-12 00:23:04,663 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:12.852697', 'heart_rate': 66}
+2025-05-12 00:23:04,671 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:12.852697', 'heart_rate': 66}
+2025-05-12 00:23:04,806 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:13.892628', 'heart_rate': 63}
+2025-05-12 00:23:04,812 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:13.892628', 'heart_rate': 63}
+2025-05-12 00:23:04,873 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:14.902025', 'heart_rate': 81}
+2025-05-12 00:23:04,879 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:14.902025', 'heart_rate': 81}
+2025-05-12 00:23:04,913 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:15.905797', 'heart_rate': 96}
+2025-05-12 00:23:04,921 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:15.905797', 'heart_rate': 96}
+2025-05-12 00:23:04,951 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:16.910516', 'heart_rate': 76}
+2025-05-12 00:23:04,958 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:16.910516', 'heart_rate': 76}
+2025-05-12 00:23:04,991 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:17.917138', 'heart_rate': 66}
+2025-05-12 00:23:04,997 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:17.917138', 'heart_rate': 66}
+2025-05-12 00:23:05,046 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:18.920486', 'heart_rate': 64}
+2025-05-12 00:23:05,055 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:18.920486', 'heart_rate': 64}
+2025-05-12 00:23:05,112 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:19.930341', 'heart_rate': 80}
+2025-05-12 00:23:05,121 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:19.930341', 'heart_rate': 80}
+2025-05-12 00:23:05,151 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:20.938036', 'heart_rate': 96}
+2025-05-12 00:23:05,158 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:20.938036', 'heart_rate': 96}
+2025-05-12 00:23:05,190 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:21.941507', 'heart_rate': 89}
+2025-05-12 00:23:05,196 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:21.941507', 'heart_rate': 89}
+2025-05-12 00:23:05,227 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:22.956772', 'heart_rate': 84}
+2025-05-12 00:23:05,234 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:22.956772', 'heart_rate': 84}
+2025-05-12 00:23:05,337 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:23.959779', 'heart_rate': 72}
+2025-05-12 00:23:05,344 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:23.959779', 'heart_rate': 72}
+2025-05-12 00:23:05,460 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:24.963164', 'heart_rate': 87}
+2025-05-12 00:23:05,467 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:24.963164', 'heart_rate': 87}
+2025-05-12 00:23:05,560 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:25.966471', 'heart_rate': 67}
+2025-05-12 00:23:05,566 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:25.966471', 'heart_rate': 67}
+2025-05-12 00:23:05,659 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:26.973826', 'heart_rate': 63}
+2025-05-12 00:23:05,667 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:26.973826', 'heart_rate': 63}
+2025-05-12 00:23:05,726 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:27.978762', 'heart_rate': 71}
+2025-05-12 00:23:05,732 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:27.978762', 'heart_rate': 71}
+2025-05-12 00:23:05,770 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:28.983165', 'heart_rate': 65}
+2025-05-12 00:23:05,776 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:28.983165', 'heart_rate': 65}
+2025-05-12 00:23:05,811 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:29.997928', 'heart_rate': 81}
+2025-05-12 00:23:05,817 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:29.997928', 'heart_rate': 81}
+2025-05-12 00:23:05,849 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:31.001017', 'heart_rate': 99}
+2025-05-12 00:23:05,864 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:31.001017', 'heart_rate': 99}
+2025-05-12 00:23:05,947 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:32.008193', 'heart_rate': 67}
+2025-05-12 00:23:05,983 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:32.008193', 'heart_rate': 67}
+2025-05-12 00:23:06,180 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:33.012475', 'heart_rate': 61}
+2025-05-12 00:23:06,187 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:33.012475', 'heart_rate': 61}
+2025-05-12 00:23:06,220 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:34.016824', 'heart_rate': 91}
+2025-05-12 00:23:06,227 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:34.016824', 'heart_rate': 91}
+2025-05-12 00:23:06,286 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:35.020395', 'heart_rate': 78}
+2025-05-12 00:23:06,292 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:35.020395', 'heart_rate': 78}
+2025-05-12 00:23:06,331 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:36.027376', 'heart_rate': 79}
+2025-05-12 00:23:06,341 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:36.027376', 'heart_rate': 79}
+2025-05-12 00:23:06,372 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:37.034266', 'heart_rate': 93}
+2025-05-12 00:23:06,379 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:37.034266', 'heart_rate': 93}
+2025-05-12 00:23:06,493 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:38.049174', 'heart_rate': 95}
+2025-05-12 00:23:06,501 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:38.049174', 'heart_rate': 95}
+2025-05-12 00:23:06,534 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:39.052815', 'heart_rate': 77}
+2025-05-12 00:23:06,542 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:22:39.052815', 'heart_rate': 77}
+2025-05-12 00:23:06,580 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:40.055159', 'heart_rate': 74}
+2025-05-12 00:23:06,590 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:40.055159', 'heart_rate': 74}
+2025-05-12 00:23:06,657 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:41.060081', 'heart_rate': 73}
+2025-05-12 00:23:06,675 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:41.060081', 'heart_rate': 73}
+2025-05-12 00:23:06,708 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:42.079601', 'heart_rate': 87}
+2025-05-12 00:23:06,714 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:42.079601', 'heart_rate': 87}
+2025-05-12 00:23:06,778 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:43.085716', 'heart_rate': 67}
+2025-05-12 00:23:06,815 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:43.085716', 'heart_rate': 67}
+2025-05-12 00:23:06,944 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:44.089875', 'heart_rate': 78}
+2025-05-12 00:23:07,003 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:44.089875', 'heart_rate': 78}
+2025-05-12 00:23:07,044 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:45.095925', 'heart_rate': 91}
+2025-05-12 00:23:07,053 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:45.095925', 'heart_rate': 91}
+2025-05-12 00:23:07,095 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:46.117668', 'heart_rate': 83}
+2025-05-12 00:23:07,105 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:46.117668', 'heart_rate': 83}
+2025-05-12 00:23:07,184 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:47.122908', 'heart_rate': 74}
+2025-05-12 00:23:07,190 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:47.122908', 'heart_rate': 74}
+2025-05-12 00:23:07,221 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:48.130779', 'heart_rate': 70}
+2025-05-12 00:23:07,227 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:48.130779', 'heart_rate': 70}
+2025-05-12 00:23:07,261 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:49.139306', 'heart_rate': 81}
+2025-05-12 00:23:07,271 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:49.139306', 'heart_rate': 81}
+2025-05-12 00:23:07,298 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:50.142317', 'heart_rate': 90}
+2025-05-12 00:23:07,305 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:50.142317', 'heart_rate': 90}
+2025-05-12 00:23:07,372 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:51.148954', 'heart_rate': 72}
+2025-05-12 00:23:07,379 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:51.148954', 'heart_rate': 72}
+2025-05-12 00:23:07,409 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:52.166493', 'heart_rate': 60}
+2025-05-12 00:23:07,416 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:22:52.166493', 'heart_rate': 60}
+2025-05-12 00:23:07,461 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:53.174475', 'heart_rate': 60}
+2025-05-12 00:23:07,466 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:53.174475', 'heart_rate': 60}
+2025-05-12 00:23:07,497 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:54.181301', 'heart_rate': 93}
+2025-05-12 00:23:07,504 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:54.181301', 'heart_rate': 93}
+2025-05-12 00:23:07,549 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:55.204681', 'heart_rate': 63}
+2025-05-12 00:23:07,555 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:55.204681', 'heart_rate': 63}
+2025-05-12 00:23:07,586 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:56.207900', 'heart_rate': 83}
+2025-05-12 00:23:07,593 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:56.207900', 'heart_rate': 83}
+2025-05-12 00:23:07,653 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:57.217049', 'heart_rate': 83}
+2025-05-12 00:23:07,659 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:22:57.217049', 'heart_rate': 83}
+2025-05-12 00:23:07,733 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:58.219966', 'heart_rate': 94}
+2025-05-12 00:23:07,741 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:22:58.219966', 'heart_rate': 94}
+2025-05-12 00:23:07,805 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:59.223102', 'heart_rate': 73}
+2025-05-12 00:23:07,811 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:22:59.223102', 'heart_rate': 73}
+2025-05-12 00:23:07,885 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:00.226927', 'heart_rate': 78}
+2025-05-12 00:23:07,891 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:00.226927', 'heart_rate': 78}
+2025-05-12 00:23:07,961 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:01.232987', 'heart_rate': 91}
+2025-05-12 00:23:07,968 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:01.232987', 'heart_rate': 91}
+2025-05-12 00:23:08,070 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:02.236633', 'heart_rate': 86}
+2025-05-12 00:23:08,083 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:02.236633', 'heart_rate': 86}
+2025-05-12 00:23:08,130 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:03.240774', 'heart_rate': 63}
+2025-05-12 00:23:08,137 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:03.240774', 'heart_rate': 63}
+2025-05-12 00:23:08,191 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:04.244316', 'heart_rate': 93}
+2025-05-12 00:23:08,197 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:04.244316', 'heart_rate': 93}
+2025-05-12 00:23:08,229 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:05.253376', 'heart_rate': 92}
+2025-05-12 00:23:08,235 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:05.253376', 'heart_rate': 92}
+2025-05-12 00:23:08,269 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:06.256517', 'heart_rate': 72}
+2025-05-12 00:23:08,278 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:06.256517', 'heart_rate': 72}
+2025-05-12 00:23:08,307 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:07.260770', 'heart_rate': 89}
+2025-05-12 00:23:08,313 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:07.260770', 'heart_rate': 89}
+2025-05-12 00:23:08,378 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:08.269739', 'heart_rate': 66}
+2025-05-12 00:23:08,383 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:08.269739', 'heart_rate': 66}
+2025-05-12 00:23:09,296 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:09.279819', 'heart_rate': 83}
+2025-05-12 00:23:09,306 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:09.279819', 'heart_rate': 83}
+2025-05-12 00:23:10,301 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:10.285724', 'heart_rate': 79}
+2025-05-12 00:23:10,322 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:10.285724', 'heart_rate': 79}
+2025-05-12 00:23:11,316 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:11.300252', 'heart_rate': 76}
+2025-05-12 00:23:11,330 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:11.300252', 'heart_rate': 76}
+2025-05-12 00:23:12,355 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:12.330136', 'heart_rate': 60}
+2025-05-12 00:23:12,373 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:12.330136', 'heart_rate': 60}
+2025-05-12 00:23:13,359 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:13.342719', 'heart_rate': 86}
+2025-05-12 00:23:13,366 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:13.342719', 'heart_rate': 86}
+2025-05-12 00:23:14,364 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:14.351244', 'heart_rate': 60}
+2025-05-12 00:23:14,371 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:14.351244', 'heart_rate': 60}
+2025-05-12 00:23:15,392 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:15.366178', 'heart_rate': 71}
+2025-05-12 00:23:15,409 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:15.366178', 'heart_rate': 71}
+2025-05-12 00:23:16,398 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:16.381272', 'heart_rate': 88}
+2025-05-12 00:23:16,407 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:16.381272', 'heart_rate': 88}
+2025-05-12 00:23:17,412 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:17.397524', 'heart_rate': 60}
+2025-05-12 00:23:17,419 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:17.397524', 'heart_rate': 60}
+2025-05-12 00:23:18,435 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:18.411676', 'heart_rate': 87}
+2025-05-12 00:23:18,444 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:18.411676', 'heart_rate': 87}
+2025-05-12 00:23:19,437 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:19.422133', 'heart_rate': 85}
+2025-05-12 00:23:19,449 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:19.422133', 'heart_rate': 85}
+2025-05-12 00:23:20,443 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:20.427199', 'heart_rate': 76}
+2025-05-12 00:23:20,450 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:20.427199', 'heart_rate': 76}
+2025-05-12 00:23:21,446 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:21.433216', 'heart_rate': 72}
+2025-05-12 00:23:21,453 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:21.433216', 'heart_rate': 72}
+2025-05-12 00:23:22,460 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:22.442712', 'heart_rate': 62}
+2025-05-12 00:23:22,470 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:22.442712', 'heart_rate': 62}
+2025-05-12 00:23:23,474 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:23.458414', 'heart_rate': 90}
+2025-05-12 00:23:23,480 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:23.458414', 'heart_rate': 90}
+2025-05-12 00:23:24,518 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:24.472228', 'heart_rate': 99}
+2025-05-12 00:23:24,554 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:24.472228', 'heart_rate': 99}
+2025-05-12 00:23:25,496 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:25.484249', 'heart_rate': 84}
+2025-05-12 00:23:25,502 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:25.484249', 'heart_rate': 84}
+2025-05-12 00:23:26,506 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:26.491858', 'heart_rate': 71}
+2025-05-12 00:23:26,517 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:26.491858', 'heart_rate': 71}
+2025-05-12 00:23:27,516 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:27.503566', 'heart_rate': 83}
+2025-05-12 00:23:27,529 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:27.503566', 'heart_rate': 83}
+2025-05-12 00:23:28,528 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:28.515862', 'heart_rate': 85}
+2025-05-12 00:23:28,544 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:28.515862', 'heart_rate': 85}
+2025-05-12 00:23:29,550 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:29.528938', 'heart_rate': 73}
+2025-05-12 00:23:29,567 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:29.528938', 'heart_rate': 73}
+2025-05-12 00:23:30,556 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:30.539008', 'heart_rate': 83}
+2025-05-12 00:23:30,566 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:30.539008', 'heart_rate': 83}
+2025-05-12 00:23:31,572 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:31.557697', 'heart_rate': 79}
+2025-05-12 00:23:31,582 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:31.557697', 'heart_rate': 79}
+2025-05-12 00:23:32,598 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:32.574598', 'heart_rate': 64}
+2025-05-12 00:23:32,613 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:32.574598', 'heart_rate': 64}
+2025-05-12 00:23:33,607 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:33.595800', 'heart_rate': 93}
+2025-05-12 00:23:33,615 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:33.595800', 'heart_rate': 93}
+2025-05-12 00:23:34,629 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:34.607194', 'heart_rate': 89}
+2025-05-12 00:23:34,646 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:34.607194', 'heart_rate': 89}
+2025-05-12 00:23:35,650 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:35.630880', 'heart_rate': 68}
+2025-05-12 00:23:35,658 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:35.630880', 'heart_rate': 68}
+2025-05-12 00:23:36,670 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:36.637792', 'heart_rate': 72}
+2025-05-12 00:23:36,684 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:36.637792', 'heart_rate': 72}
+2025-05-12 00:23:37,708 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:37.669234', 'heart_rate': 65}
+2025-05-12 00:23:37,726 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:37.669234', 'heart_rate': 65}
+2025-05-12 00:23:38,854 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:38.705385', 'heart_rate': 76}
+2025-05-12 00:23:38,905 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:38.705385', 'heart_rate': 76}
+2025-05-12 00:23:39,862 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:39.840997', 'heart_rate': 89}
+2025-05-12 00:23:39,886 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:39.840997', 'heart_rate': 89}
+2025-05-12 00:23:40,872 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:40.855736', 'heart_rate': 85}
+2025-05-12 00:23:40,905 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:40.855736', 'heart_rate': 85}
+2025-05-12 00:23:41,888 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:41.869956', 'heart_rate': 72}
+2025-05-12 00:23:41,907 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:41.869956', 'heart_rate': 72}
+2025-05-12 00:23:42,900 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:42.890082', 'heart_rate': 62}
+2025-05-12 00:23:42,906 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:42.890082', 'heart_rate': 62}
+2025-05-12 00:23:45,474 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:43.895180', 'heart_rate': 67}
+2025-05-12 00:23:45,483 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:43.895180', 'heart_rate': 67}
+2025-05-12 00:23:45,572 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:44.907918', 'heart_rate': 70}
+2025-05-12 00:23:45,579 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:44.907918', 'heart_rate': 70}
+2025-05-12 00:23:45,946 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:45.919271', 'heart_rate': 84}
+2025-05-12 00:23:45,954 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:45.919271', 'heart_rate': 84}
+2025-05-12 00:23:46,960 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:46.937215', 'heart_rate': 100}
+2025-05-12 00:23:46,973 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:46.937215', 'heart_rate': 100}
+2025-05-12 00:23:48,106 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:48.033188', 'heart_rate': 78}
+2025-05-12 00:23:48,157 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:48.033188', 'heart_rate': 78}
+2025-05-12 00:23:49,132 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:49.121095', 'heart_rate': 97}
+2025-05-12 00:23:49,141 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:49.121095', 'heart_rate': 97}
+2025-05-12 00:23:50,138 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:50.126166', 'heart_rate': 69}
+2025-05-12 00:23:50,146 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:50.126166', 'heart_rate': 69}
+2025-05-12 00:23:51,150 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:51.136102', 'heart_rate': 62}
+2025-05-12 00:23:51,158 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:23:51.136102', 'heart_rate': 62}
+2025-05-12 00:23:53,001 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:52.144808', 'heart_rate': 88}
+2025-05-12 00:23:53,011 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:52.144808', 'heart_rate': 88}
+2025-05-12 00:23:53,160 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:53.149939', 'heart_rate': 91}
+2025-05-12 00:23:53,167 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:23:53.149939', 'heart_rate': 91}
+2025-05-12 00:23:54,290 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:54.181232', 'heart_rate': 93}
+2025-05-12 00:23:54,377 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:23:54.181232', 'heart_rate': 93}
+2025-05-12 00:23:55,274 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:55.261448', 'heart_rate': 72}
+2025-05-12 00:23:55,282 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:55.261448', 'heart_rate': 72}
+2025-05-12 00:23:56,281 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:56.267166', 'heart_rate': 80}
+2025-05-12 00:23:56,288 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:56.267166', 'heart_rate': 80}
+2025-05-12 00:23:57,293 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:57.278975', 'heart_rate': 97}
+2025-05-12 00:23:57,301 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:23:57.278975', 'heart_rate': 97}
+2025-05-12 00:23:58,300 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:58.284936', 'heart_rate': 89}
+2025-05-12 00:23:58,307 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:58.284936', 'heart_rate': 89}
+2025-05-12 00:23:59,310 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:59.298673', 'heart_rate': 94}
+2025-05-12 00:23:59,322 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:23:59.298673', 'heart_rate': 94}
+2025-05-12 00:24:00,328 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:00.310095', 'heart_rate': 85}
+2025-05-12 00:24:00,347 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:00.310095', 'heart_rate': 85}
+2025-05-12 00:24:01,368 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:01.318679', 'heart_rate': 62}
+2025-05-12 00:24:01,417 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:01.318679', 'heart_rate': 62}
+2025-05-12 00:24:02,520 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:02.405084', 'heart_rate': 63}
+2025-05-12 00:24:02,684 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:02.405084', 'heart_rate': 63}
+2025-05-12 00:24:03,522 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:03.498186', 'heart_rate': 92}
+2025-05-12 00:24:03,535 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:03.498186', 'heart_rate': 92}
+2025-05-12 00:24:04,536 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:04.517866', 'heart_rate': 95}
+2025-05-12 00:24:04,545 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:04.517866', 'heart_rate': 95}
+2025-05-12 00:24:05,553 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:05.533870', 'heart_rate': 66}
+2025-05-12 00:24:05,568 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:05.533870', 'heart_rate': 66}
+2025-05-12 00:24:06,561 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:06.550763', 'heart_rate': 90}
+2025-05-12 00:24:06,567 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:06.550763', 'heart_rate': 90}
+2025-05-12 00:24:07,568 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:07.555388', 'heart_rate': 66}
+2025-05-12 00:24:07,577 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:07.555388', 'heart_rate': 66}
+2025-05-12 00:24:08,587 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:08.567510', 'heart_rate': 69}
+2025-05-12 00:24:08,611 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:08.567510', 'heart_rate': 69}
+2025-05-12 00:24:09,601 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:09.584596', 'heart_rate': 69}
+2025-05-12 00:24:09,614 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:09.584596', 'heart_rate': 69}
+2025-05-12 00:24:10,612 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:10.600124', 'heart_rate': 82}
+2025-05-12 00:24:10,623 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:10.600124', 'heart_rate': 82}
+2025-05-12 00:24:11,618 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:11.605946', 'heart_rate': 82}
+2025-05-12 00:24:11,627 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:11.605946', 'heart_rate': 82}
+2025-05-12 00:24:12,632 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:12.617591', 'heart_rate': 72}
+2025-05-12 00:24:12,639 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:12.617591', 'heart_rate': 72}
+2025-05-12 00:24:13,647 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:13.631070', 'heart_rate': 68}
+2025-05-12 00:24:13,678 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:13.631070', 'heart_rate': 68}
+2025-05-12 00:24:14,655 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:14.644420', 'heart_rate': 67}
+2025-05-12 00:24:14,662 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:14.644420', 'heart_rate': 67}
+2025-05-12 00:24:15,663 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:15.654213', 'heart_rate': 70}
+2025-05-12 00:24:15,686 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:15.654213', 'heart_rate': 70}
+2025-05-12 00:24:16,674 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:16.663933', 'heart_rate': 74}
+2025-05-12 00:24:16,689 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:16.663933', 'heart_rate': 74}
+2025-05-12 00:24:17,700 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:17.679150', 'heart_rate': 94}
+2025-05-12 00:24:17,707 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:17.679150', 'heart_rate': 94}
+2025-05-12 00:24:18,749 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:18.718173', 'heart_rate': 74}
+2025-05-12 00:24:18,776 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:18.718173', 'heart_rate': 74}
+2025-05-12 00:24:19,757 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:19.745666', 'heart_rate': 92}
+2025-05-12 00:24:19,780 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:19.745666', 'heart_rate': 92}
+2025-05-12 00:24:20,771 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:20.755596', 'heart_rate': 89}
+2025-05-12 00:24:20,784 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:20.755596', 'heart_rate': 89}
+2025-05-12 00:24:21,792 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:21.768252', 'heart_rate': 77}
+2025-05-12 00:24:21,817 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:21.768252', 'heart_rate': 77}
+2025-05-12 00:24:22,809 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:22.788549', 'heart_rate': 93}
+2025-05-12 00:24:22,824 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:22.788549', 'heart_rate': 93}
+2025-05-12 00:24:23,818 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:23.806987', 'heart_rate': 90}
+2025-05-12 00:24:23,834 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:23.806987', 'heart_rate': 90}
+2025-05-12 00:24:24,828 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:24.816550', 'heart_rate': 87}
+2025-05-12 00:24:24,836 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:24.816550', 'heart_rate': 87}
+2025-05-12 00:24:25,836 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:25.826834', 'heart_rate': 71}
+2025-05-12 00:24:25,851 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:25.826834', 'heart_rate': 71}
+2025-05-12 00:24:26,870 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:26.849129', 'heart_rate': 63}
+2025-05-12 00:24:26,878 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:26.849129', 'heart_rate': 63}
+2025-05-12 00:24:27,879 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:27.868740', 'heart_rate': 97}
+2025-05-12 00:24:27,887 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:27.868740', 'heart_rate': 97}
+2025-05-12 00:24:28,886 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:28.874700', 'heart_rate': 66}
+2025-05-12 00:24:28,904 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:24:28.874700', 'heart_rate': 66}
+2025-05-12 00:24:29,889 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:29.880067', 'heart_rate': 78}
+2025-05-12 00:24:29,897 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:29.880067', 'heart_rate': 78}
+2025-05-12 00:24:30,910 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:30.888786', 'heart_rate': 99}
+2025-05-12 00:24:30,920 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:30.888786', 'heart_rate': 99}
+2025-05-12 00:24:31,913 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:31.903691', 'heart_rate': 73}
+2025-05-12 00:24:31,919 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:31.903691', 'heart_rate': 73}
+2025-05-12 00:24:32,924 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:32.910582', 'heart_rate': 62}
+2025-05-12 00:24:32,932 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:32.910582', 'heart_rate': 62}
+2025-05-12 00:24:33,933 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:33.923174', 'heart_rate': 64}
+2025-05-12 00:24:33,941 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:33.923174', 'heart_rate': 64}
+2025-05-12 00:24:34,941 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:34.928760', 'heart_rate': 68}
+2025-05-12 00:24:34,953 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:34.928760', 'heart_rate': 68}
+2025-05-12 00:24:35,946 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:35.935832', 'heart_rate': 67}
+2025-05-12 00:24:35,952 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:35.935832', 'heart_rate': 67}
+2025-05-12 00:24:36,950 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:36.941449', 'heart_rate': 63}
+2025-05-12 00:24:36,956 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:36.941449', 'heart_rate': 63}
+2025-05-12 00:24:37,955 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:37.946400', 'heart_rate': 77}
+2025-05-12 00:24:37,961 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:37.946400', 'heart_rate': 77}
+2025-05-12 00:24:38,968 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:38.954450', 'heart_rate': 100}
+2025-05-12 00:24:38,982 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:38.954450', 'heart_rate': 100}
+2025-05-12 00:24:39,978 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:39.963366', 'heart_rate': 66}
+2025-05-12 00:24:39,990 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:39.963366', 'heart_rate': 66}
+2025-05-12 00:24:40,998 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:40.979076', 'heart_rate': 98}
+2025-05-12 00:24:41,036 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:40.979076', 'heart_rate': 98}
+2025-05-12 00:24:42,020 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:42.006286', 'heart_rate': 84}
+2025-05-12 00:24:42,026 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:42.006286', 'heart_rate': 84}
+2025-05-12 00:24:43,220 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:43.017864', 'heart_rate': 74}
+2025-05-12 00:24:43,228 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:43.017864', 'heart_rate': 74}
+2025-05-12 00:24:44,045 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:44.028533', 'heart_rate': 92}
+2025-05-12 00:24:44,052 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:44.028533', 'heart_rate': 92}
+2025-05-12 00:24:45,051 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:45.042396', 'heart_rate': 96}
+2025-05-12 00:24:45,060 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:45.042396', 'heart_rate': 96}
+2025-05-12 00:24:46,063 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:46.047658', 'heart_rate': 65}
+2025-05-12 00:24:46,076 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:46.047658', 'heart_rate': 65}
+2025-05-12 00:24:47,078 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:47.055700', 'heart_rate': 99}
+2025-05-12 00:24:47,090 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:47.055700', 'heart_rate': 99}
+2025-05-12 00:24:48,086 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:48.075389', 'heart_rate': 76}
+2025-05-12 00:24:48,095 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:48.075389', 'heart_rate': 76}
+2025-05-12 00:24:49,099 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:49.085935', 'heart_rate': 90}
+2025-05-12 00:24:49,106 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:49.085935', 'heart_rate': 90}
+2025-05-12 00:24:50,111 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:50.091348', 'heart_rate': 78}
+2025-05-12 00:24:50,123 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:50.091348', 'heart_rate': 78}
+2025-05-12 00:24:51,126 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:51.103449', 'heart_rate': 96}
+2025-05-12 00:24:51,150 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:51.103449', 'heart_rate': 96}
+2025-05-12 00:24:52,142 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:52.123945', 'heart_rate': 88}
+2025-05-12 00:24:52,149 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:24:52.123945', 'heart_rate': 88}
+2025-05-12 00:24:53,149 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:53.128225', 'heart_rate': 100}
+2025-05-12 00:24:53,170 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:53.128225', 'heart_rate': 100}
+2025-05-12 00:24:54,655 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:54.157072', 'heart_rate': 61}
+2025-05-12 00:24:54,662 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:24:54.157072', 'heart_rate': 61}
+2025-05-12 00:24:55,189 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:55.173328', 'heart_rate': 83}
+2025-05-12 00:24:55,197 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:55.173328', 'heart_rate': 83}
+2025-05-12 00:24:56,203 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:56.188940', 'heart_rate': 82}
+2025-05-12 00:24:56,210 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:56.188940', 'heart_rate': 82}
+2025-05-12 00:24:57,212 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:57.201529', 'heart_rate': 75}
+2025-05-12 00:24:57,218 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:57.201529', 'heart_rate': 75}
+2025-05-12 00:24:58,224 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:58.214611', 'heart_rate': 78}
+2025-05-12 00:24:58,232 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:24:58.214611', 'heart_rate': 78}
+2025-05-12 00:24:59,248 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:59.227297', 'heart_rate': 65}
+2025-05-12 00:24:59,274 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:24:59.227297', 'heart_rate': 65}
+2025-05-12 00:25:00,255 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:00.246513', 'heart_rate': 77}
+2025-05-12 00:25:00,264 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:00.246513', 'heart_rate': 77}
+2025-05-12 00:25:01,261 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:01.251712', 'heart_rate': 69}
+2025-05-12 00:25:01,269 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:01.251712', 'heart_rate': 69}
+2025-05-12 00:25:02,270 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:02.256821', 'heart_rate': 89}
+2025-05-12 00:25:02,276 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:02.256821', 'heart_rate': 89}
+2025-05-12 00:25:03,292 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:03.269282', 'heart_rate': 91}
+2025-05-12 00:25:03,298 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:03.269282', 'heart_rate': 91}
+2025-05-12 00:25:04,300 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:04.279388', 'heart_rate': 87}
+2025-05-12 00:25:04,332 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:04.279388', 'heart_rate': 87}
+2025-05-12 00:25:05,316 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:05.298115', 'heart_rate': 87}
+2025-05-12 00:25:05,347 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:05.298115', 'heart_rate': 87}
+2025-05-12 00:25:06,324 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:06.312763', 'heart_rate': 84}
+2025-05-12 00:25:06,336 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:06.312763', 'heart_rate': 84}
+2025-05-12 00:25:07,334 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:07.324206', 'heart_rate': 93}
+2025-05-12 00:25:07,341 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:07.324206', 'heart_rate': 93}
+2025-05-12 00:25:08,347 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:08.334217', 'heart_rate': 64}
+2025-05-12 00:25:08,359 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:08.334217', 'heart_rate': 64}
+2025-05-12 00:25:09,362 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:09.345303', 'heart_rate': 98}
+2025-05-12 00:25:09,384 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:09.345303', 'heart_rate': 98}
+2025-05-12 00:25:10,389 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:10.372343', 'heart_rate': 98}
+2025-05-12 00:25:10,429 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:10.372343', 'heart_rate': 98}
+2025-05-12 00:25:11,406 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:11.389155', 'heart_rate': 87}
+2025-05-12 00:25:11,421 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:11.389155', 'heart_rate': 87}
+2025-05-12 00:25:12,486 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:12.407734', 'heart_rate': 95}
+2025-05-12 00:25:12,560 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:12.407734', 'heart_rate': 95}
+2025-05-12 00:25:13,470 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:13.458104', 'heart_rate': 82}
+2025-05-12 00:25:13,477 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:13.458104', 'heart_rate': 82}
+2025-05-12 00:25:14,473 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:14.463325', 'heart_rate': 66}
+2025-05-12 00:25:14,479 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:14.463325', 'heart_rate': 66}
+2025-05-12 00:25:15,495 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:15.474605', 'heart_rate': 65}
+2025-05-12 00:25:15,523 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:15.474605', 'heart_rate': 65}
+2025-05-12 00:25:16,536 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:16.522502', 'heart_rate': 76}
+2025-05-12 00:25:16,558 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:16.522502', 'heart_rate': 76}
+2025-05-12 00:25:17,547 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:17.535594', 'heart_rate': 92}
+2025-05-12 00:25:17,553 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:17.535594', 'heart_rate': 92}
+2025-05-12 00:25:18,552 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:18.543819', 'heart_rate': 68}
+2025-05-12 00:25:18,559 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:18.543819', 'heart_rate': 68}
+2025-05-12 00:25:19,558 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:19.548219', 'heart_rate': 96}
+2025-05-12 00:25:19,564 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:19.548219', 'heart_rate': 96}
+2025-05-12 00:25:20,575 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:20.557079', 'heart_rate': 96}
+2025-05-12 00:25:20,587 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:20.557079', 'heart_rate': 96}
+2025-05-12 00:25:21,584 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:21.571104', 'heart_rate': 74}
+2025-05-12 00:25:21,590 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:21.571104', 'heart_rate': 74}
+2025-05-12 00:25:22,592 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:22.581663', 'heart_rate': 66}
+2025-05-12 00:25:22,601 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:22.581663', 'heart_rate': 66}
+2025-05-12 00:25:23,606 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:23.592654', 'heart_rate': 91}
+2025-05-12 00:25:23,616 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:23.592654', 'heart_rate': 91}
+2025-05-12 00:25:24,659 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:24.622786', 'heart_rate': 80}
+2025-05-12 00:25:24,672 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:24.622786', 'heart_rate': 80}
+2025-05-12 00:25:25,657 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:25.643335', 'heart_rate': 92}
+2025-05-12 00:25:25,671 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:25.643335', 'heart_rate': 92}
+2025-05-12 00:25:26,671 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:26.650105', 'heart_rate': 69}
+2025-05-12 00:25:26,682 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:26.650105', 'heart_rate': 69}
+2025-05-12 00:25:27,677 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:27.668051', 'heart_rate': 83}
+2025-05-12 00:25:27,684 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:27.668051', 'heart_rate': 83}
+2025-05-12 00:25:28,681 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:28.673139', 'heart_rate': 72}
+2025-05-12 00:25:28,688 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:28.673139', 'heart_rate': 72}
+2025-05-12 00:25:29,690 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:29.681658', 'heart_rate': 69}
+2025-05-12 00:25:29,697 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:29.681658', 'heart_rate': 69}
+2025-05-12 00:25:30,700 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:30.687450', 'heart_rate': 96}
+2025-05-12 00:25:30,706 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:30.687450', 'heart_rate': 96}
+2025-05-12 00:25:31,707 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:31.697541', 'heart_rate': 94}
+2025-05-12 00:25:31,714 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:31.697541', 'heart_rate': 94}
+2025-05-12 00:25:32,727 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:32.706740', 'heart_rate': 91}
+2025-05-12 00:25:32,739 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:32.706740', 'heart_rate': 91}
+2025-05-12 00:25:33,741 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:33.712746', 'heart_rate': 88}
+2025-05-12 00:25:33,758 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:33.712746', 'heart_rate': 88}
+2025-05-12 00:25:34,745 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:34.735317', 'heart_rate': 62}
+2025-05-12 00:25:34,750 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:34.735317', 'heart_rate': 62}
+2025-05-12 00:25:35,751 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:35.741664', 'heart_rate': 60}
+2025-05-12 00:25:35,759 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:35.741664', 'heart_rate': 60}
+2025-05-12 00:25:36,766 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:36.754214', 'heart_rate': 74}
+2025-05-12 00:25:36,771 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:36.754214', 'heart_rate': 74}
+2025-05-12 00:25:37,773 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:37.764190', 'heart_rate': 77}
+2025-05-12 00:25:37,779 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:37.764190', 'heart_rate': 77}
+2025-05-12 00:25:38,782 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:38.773050', 'heart_rate': 96}
+2025-05-12 00:25:38,788 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:25:38.773050', 'heart_rate': 96}
+2025-05-12 00:25:39,829 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:39.780511', 'heart_rate': 87}
+2025-05-12 00:25:39,835 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:39.780511', 'heart_rate': 87}
+2025-05-12 00:25:40,837 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:40.827517', 'heart_rate': 98}
+2025-05-12 00:25:40,844 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:40.827517', 'heart_rate': 98}
+2025-05-12 00:25:41,847 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:41.835927', 'heart_rate': 84}
+2025-05-12 00:25:41,853 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:41.835927', 'heart_rate': 84}
+2025-05-12 00:25:42,857 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:42.847286', 'heart_rate': 80}
+2025-05-12 00:25:42,864 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:42.847286', 'heart_rate': 80}
+2025-05-12 00:25:43,871 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:43.857196', 'heart_rate': 72}
+2025-05-12 00:25:43,881 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:43.857196', 'heart_rate': 72}
+2025-05-12 00:25:44,877 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:44.863107', 'heart_rate': 82}
+2025-05-12 00:25:44,888 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:44.863107', 'heart_rate': 82}
+2025-05-12 00:25:45,886 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:45.876644', 'heart_rate': 74}
+2025-05-12 00:25:45,892 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:45.876644', 'heart_rate': 74}
+2025-05-12 00:25:46,897 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:46.887657', 'heart_rate': 74}
+2025-05-12 00:25:46,902 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:46.887657', 'heart_rate': 74}
+2025-05-12 00:25:47,909 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:47.896219', 'heart_rate': 80}
+2025-05-12 00:25:47,917 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:47.896219', 'heart_rate': 80}
+2025-05-12 00:25:48,925 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:48.908546', 'heart_rate': 67}
+2025-05-12 00:25:48,934 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:48.908546', 'heart_rate': 67}
+2025-05-12 00:25:49,933 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:49.923351', 'heart_rate': 73}
+2025-05-12 00:25:49,940 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:49.923351', 'heart_rate': 73}
+2025-05-12 00:25:50,941 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:50.931774', 'heart_rate': 84}
+2025-05-12 00:25:50,946 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:50.931774', 'heart_rate': 84}
+2025-05-12 00:25:51,950 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:51.939177', 'heart_rate': 88}
+2025-05-12 00:25:51,955 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:51.939177', 'heart_rate': 88}
+2025-05-12 00:25:52,962 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:52.949118', 'heart_rate': 71}
+2025-05-12 00:25:52,970 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:25:52.949118', 'heart_rate': 71}
+2025-05-12 00:25:53,973 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:53.958303', 'heart_rate': 70}
+2025-05-12 00:25:53,981 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:53.958303', 'heart_rate': 70}
+2025-05-12 00:25:54,982 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:54.972789', 'heart_rate': 95}
+2025-05-12 00:25:54,994 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:54.972789', 'heart_rate': 95}
+2025-05-12 00:25:55,990 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:55.980619', 'heart_rate': 66}
+2025-05-12 00:25:55,996 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:25:55.980619', 'heart_rate': 66}
+2025-05-12 00:25:56,995 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:56.988290', 'heart_rate': 71}
+2025-05-12 00:25:57,021 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:56.988290', 'heart_rate': 71}
+2025-05-12 00:25:58,016 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:57.999596', 'heart_rate': 80}
+2025-05-12 00:25:58,023 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:25:57.999596', 'heart_rate': 80}
+2025-05-12 00:25:59,022 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:59.010974', 'heart_rate': 81}
+2025-05-12 00:25:59,029 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:25:59.010974', 'heart_rate': 81}
+2025-05-12 00:26:00,034 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:00.024014', 'heart_rate': 66}
+2025-05-12 00:26:00,041 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:00.024014', 'heart_rate': 66}
+2025-05-12 00:26:01,046 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:01.032351', 'heart_rate': 65}
+2025-05-12 00:26:01,058 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:01.032351', 'heart_rate': 65}
+2025-05-12 00:26:02,173 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:02.067602', 'heart_rate': 70}
+2025-05-12 00:26:02,208 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:02.067602', 'heart_rate': 70}
+2025-05-12 00:26:03,164 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:03.152546', 'heart_rate': 93}
+2025-05-12 00:26:03,173 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:03.152546', 'heart_rate': 93}
+2025-05-12 00:26:04,167 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:04.157154', 'heart_rate': 73}
+2025-05-12 00:26:04,175 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:04.157154', 'heart_rate': 73}
+2025-05-12 00:26:05,178 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:05.165964', 'heart_rate': 100}
+2025-05-12 00:26:05,184 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:05.165964', 'heart_rate': 100}
+2025-05-12 00:26:06,191 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:06.178286', 'heart_rate': 95}
+2025-05-12 00:26:06,197 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:06.178286', 'heart_rate': 95}
+2025-05-12 00:26:07,206 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:07.189019', 'heart_rate': 75}
+2025-05-12 00:26:07,228 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:07.189019', 'heart_rate': 75}
+2025-05-12 00:26:08,211 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:08.201563', 'heart_rate': 90}
+2025-05-12 00:26:08,217 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:08.201563', 'heart_rate': 90}
+2025-05-12 00:26:09,221 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:09.209859', 'heart_rate': 88}
+2025-05-12 00:26:09,226 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:09.209859', 'heart_rate': 88}
+2025-05-12 00:26:10,298 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:10.221340', 'heart_rate': 73}
+2025-05-12 00:26:10,318 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:10.221340', 'heart_rate': 73}
+2025-05-12 00:26:11,273 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:11.265503', 'heart_rate': 97}
+2025-05-12 00:26:11,279 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:11.265503', 'heart_rate': 97}
+2025-05-12 00:26:12,303 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:12.287629', 'heart_rate': 71}
+2025-05-12 00:26:12,343 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:12.287629', 'heart_rate': 71}
+2025-05-12 00:26:13,318 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:13.300028', 'heart_rate': 84}
+2025-05-12 00:26:13,327 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:13.300028', 'heart_rate': 84}
+2025-05-12 00:26:14,334 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:14.322670', 'heart_rate': 97}
+2025-05-12 00:26:14,344 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:14.322670', 'heart_rate': 97}
+2025-05-12 00:26:15,343 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:15.334306', 'heart_rate': 74}
+2025-05-12 00:26:15,350 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:15.334306', 'heart_rate': 74}
+2025-05-12 00:26:16,359 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:16.343577', 'heart_rate': 99}
+2025-05-12 00:26:16,371 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:16.343577', 'heart_rate': 99}
+2025-05-12 00:26:17,366 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:17.357656', 'heart_rate': 88}
+2025-05-12 00:26:17,372 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:17.357656', 'heart_rate': 88}
+2025-05-12 00:26:18,388 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:18.367853', 'heart_rate': 70}
+2025-05-12 00:26:18,416 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:18.367853', 'heart_rate': 70}
+2025-05-12 00:26:19,414 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:19.385069', 'heart_rate': 98}
+2025-05-12 00:26:19,425 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:19.385069', 'heart_rate': 98}
+2025-05-12 00:26:20,405 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:20.393857', 'heart_rate': 60}
+2025-05-12 00:26:20,418 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:20.393857', 'heart_rate': 60}
+2025-05-12 00:26:21,411 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:21.402718', 'heart_rate': 99}
+2025-05-12 00:26:21,422 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:21.402718', 'heart_rate': 99}
+2025-05-12 00:26:22,426 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:22.410514', 'heart_rate': 62}
+2025-05-12 00:26:22,432 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:22.410514', 'heart_rate': 62}
+2025-05-12 00:26:23,438 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:23.423803', 'heart_rate': 88}
+2025-05-12 00:26:23,445 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:23.423803', 'heart_rate': 88}
+2025-05-12 00:26:24,446 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:24.436706', 'heart_rate': 98}
+2025-05-12 00:26:24,454 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:24.436706', 'heart_rate': 98}
+2025-05-12 00:26:25,454 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:25.445687', 'heart_rate': 86}
+2025-05-12 00:26:25,460 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:25.445687', 'heart_rate': 86}
+2025-05-12 00:26:26,459 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:26.450842', 'heart_rate': 97}
+2025-05-12 00:26:26,467 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:26.450842', 'heart_rate': 97}
+2025-05-12 00:26:27,464 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:27.455823', 'heart_rate': 89}
+2025-05-12 00:26:27,471 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:27.455823', 'heart_rate': 89}
+2025-05-12 00:26:28,472 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:28.461601', 'heart_rate': 80}
+2025-05-12 00:26:28,481 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:28.461601', 'heart_rate': 80}
+2025-05-12 00:26:29,493 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:29.468571', 'heart_rate': 72}
+2025-05-12 00:26:29,507 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:29.468571', 'heart_rate': 72}
+2025-05-12 00:26:30,488 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:30.479161', 'heart_rate': 84}
+2025-05-12 00:26:30,494 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:30.479161', 'heart_rate': 84}
+2025-05-12 00:26:31,492 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:31.484384', 'heart_rate': 86}
+2025-05-12 00:26:31,503 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:31.484384', 'heart_rate': 86}
+2025-05-12 00:26:32,506 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:32.492850', 'heart_rate': 92}
+2025-05-12 00:26:32,517 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:32.492850', 'heart_rate': 92}
+2025-05-12 00:26:33,516 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:33.505634', 'heart_rate': 82}
+2025-05-12 00:26:33,522 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:33.505634', 'heart_rate': 82}
+2025-05-12 00:26:34,523 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:34.512816', 'heart_rate': 65}
+2025-05-12 00:26:34,532 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:34.512816', 'heart_rate': 65}
+2025-05-12 00:26:35,531 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:35.521780', 'heart_rate': 98}
+2025-05-12 00:26:35,538 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:35.521780', 'heart_rate': 98}
+2025-05-12 00:26:36,540 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:36.531125', 'heart_rate': 78}
+2025-05-12 00:26:36,547 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:36.531125', 'heart_rate': 78}
+2025-05-12 00:26:37,552 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:37.539318', 'heart_rate': 82}
+2025-05-12 00:26:37,562 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:37.539318', 'heart_rate': 82}
+2025-05-12 00:26:38,561 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:38.551718', 'heart_rate': 66}
+2025-05-12 00:26:38,568 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:38.551718', 'heart_rate': 66}
+2025-05-12 00:26:39,571 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:39.557850', 'heart_rate': 85}
+2025-05-12 00:26:39,579 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:39.557850', 'heart_rate': 85}
+2025-05-12 00:26:40,574 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:40.563834', 'heart_rate': 82}
+2025-05-12 00:26:40,581 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:40.563834', 'heart_rate': 82}
+2025-05-12 00:26:41,587 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:41.573100', 'heart_rate': 78}
+2025-05-12 00:26:41,597 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:41.573100', 'heart_rate': 78}
+2025-05-12 00:26:42,594 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:42.584280', 'heart_rate': 81}
+2025-05-12 00:26:42,601 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:42.584280', 'heart_rate': 81}
+2025-05-12 00:26:43,603 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:43.593737', 'heart_rate': 71}
+2025-05-12 00:26:43,608 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:43.593737', 'heart_rate': 71}
+2025-05-12 00:26:44,608 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:44.599633', 'heart_rate': 62}
+2025-05-12 00:26:44,617 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:44.599633', 'heart_rate': 62}
+2025-05-12 00:26:45,616 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:45.607735', 'heart_rate': 100}
+2025-05-12 00:26:45,625 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:45.607735', 'heart_rate': 100}
+2025-05-12 00:26:46,623 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:46.613304', 'heart_rate': 80}
+2025-05-12 00:26:46,629 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:46.613304', 'heart_rate': 80}
+2025-05-12 00:26:47,635 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:47.622472', 'heart_rate': 63}
+2025-05-12 00:26:47,641 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:47.622472', 'heart_rate': 63}
+2025-05-12 00:26:48,646 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:48.636835', 'heart_rate': 74}
+2025-05-12 00:26:48,654 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:48.636835', 'heart_rate': 74}
+2025-05-12 00:26:49,663 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:49.652406', 'heart_rate': 72}
+2025-05-12 00:26:49,673 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:26:49.652406', 'heart_rate': 72}
+2025-05-12 00:26:50,675 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:50.663404', 'heart_rate': 74}
+2025-05-12 00:26:50,686 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:50.663404', 'heart_rate': 74}
+2025-05-12 00:26:51,681 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:51.671921', 'heart_rate': 63}
+2025-05-12 00:26:51,687 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:51.671921', 'heart_rate': 63}
+2025-05-12 00:26:52,693 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:52.679329', 'heart_rate': 63}
+2025-05-12 00:26:52,716 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:52.679329', 'heart_rate': 63}
+2025-05-12 00:26:53,699 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:53.691044', 'heart_rate': 83}
+2025-05-12 00:26:53,716 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:53.691044', 'heart_rate': 83}
+2025-05-12 00:26:54,706 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:54.698336', 'heart_rate': 74}
+2025-05-12 00:26:54,714 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:54.698336', 'heart_rate': 74}
+2025-05-12 00:26:55,712 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:55.703376', 'heart_rate': 69}
+2025-05-12 00:26:55,719 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:55.703376', 'heart_rate': 69}
+2025-05-12 00:26:56,718 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:56.709015', 'heart_rate': 79}
+2025-05-12 00:26:56,727 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:26:56.709015', 'heart_rate': 79}
+2025-05-12 00:26:57,731 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:57.716967', 'heart_rate': 80}
+2025-05-12 00:26:57,743 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:26:57.716967', 'heart_rate': 80}
+2025-05-12 00:26:58,738 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:58.728684', 'heart_rate': 92}
+2025-05-12 00:26:58,744 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:26:58.728684', 'heart_rate': 92}
+2025-05-12 00:26:59,752 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:59.738488', 'heart_rate': 82}
+2025-05-12 00:26:59,770 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:26:59.738488', 'heart_rate': 82}
+2025-05-12 00:27:00,772 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:00.751201', 'heart_rate': 80}
+2025-05-12 00:27:00,783 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:00.751201', 'heart_rate': 80}
+2025-05-12 00:27:01,781 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:01.770230', 'heart_rate': 74}
+2025-05-12 00:27:01,816 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:01.770230', 'heart_rate': 74}
+2025-05-12 00:27:02,817 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:02.783119', 'heart_rate': 88}
+2025-05-12 00:27:02,836 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:02.783119', 'heart_rate': 88}
+2025-05-12 00:27:03,824 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:03.804194', 'heart_rate': 66}
+2025-05-12 00:27:03,868 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:03.804194', 'heart_rate': 66}
+2025-05-12 00:27:04,848 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:04.831226', 'heart_rate': 99}
+2025-05-12 00:27:04,856 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:04.831226', 'heart_rate': 99}
+2025-05-12 00:27:05,859 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:05.848876', 'heart_rate': 76}
+2025-05-12 00:27:05,866 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:05.848876', 'heart_rate': 76}
+2025-05-12 00:27:06,861 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:06.853032', 'heart_rate': 60}
+2025-05-12 00:27:06,868 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:06.853032', 'heart_rate': 60}
+2025-05-12 00:27:07,881 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:07.861153', 'heart_rate': 91}
+2025-05-12 00:27:07,891 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:07.861153', 'heart_rate': 91}
+2025-05-12 00:27:08,895 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:08.878826', 'heart_rate': 81}
+2025-05-12 00:27:08,902 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:08.878826', 'heart_rate': 81}
+2025-05-12 00:27:09,902 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:09.893160', 'heart_rate': 93}
+2025-05-12 00:27:09,908 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:09.893160', 'heart_rate': 93}
+2025-05-12 00:27:10,911 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:10.901987', 'heart_rate': 93}
+2025-05-12 00:27:10,918 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:10.901987', 'heart_rate': 93}
+2025-05-12 00:27:11,923 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:11.911374', 'heart_rate': 93}
+2025-05-12 00:27:11,933 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:11.911374', 'heart_rate': 93}
+2025-05-12 00:27:12,940 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:12.924017', 'heart_rate': 92}
+2025-05-12 00:27:12,952 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:12.924017', 'heart_rate': 92}
+2025-05-12 00:27:13,949 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:13.939133', 'heart_rate': 83}
+2025-05-12 00:27:13,956 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:13.939133', 'heart_rate': 83}
+2025-05-12 00:27:14,963 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:14.948097', 'heart_rate': 87}
+2025-05-12 00:27:14,971 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:14.948097', 'heart_rate': 87}
+2025-05-12 00:27:15,972 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:15.960725', 'heart_rate': 98}
+2025-05-12 00:27:15,983 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:15.960725', 'heart_rate': 98}
+2025-05-12 00:27:16,983 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:16.969904', 'heart_rate': 99}
+2025-05-12 00:27:16,990 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:16.969904', 'heart_rate': 99}
+2025-05-12 00:27:17,991 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:17.979931', 'heart_rate': 78}
+2025-05-12 00:27:18,002 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:17.979931', 'heart_rate': 78}
+2025-05-12 00:27:19,000 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:18.990398', 'heart_rate': 69}
+2025-05-12 00:27:19,005 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:18.990398', 'heart_rate': 69}
+2025-05-12 00:27:20,007 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:19.998386', 'heart_rate': 82}
+2025-05-12 00:27:20,013 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:19.998386', 'heart_rate': 82}
+2025-05-12 00:27:22,363 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:21.004320', 'heart_rate': 62}
+2025-05-12 00:27:22,375 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:21.004320', 'heart_rate': 62}
+2025-05-12 00:27:22,441 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:22.094826', 'heart_rate': 68}
+2025-05-12 00:27:22,450 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:22.094826', 'heart_rate': 68}
+2025-05-12 00:27:23,113 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:23.105417', 'heart_rate': 72}
+2025-05-12 00:27:23,124 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:23.105417', 'heart_rate': 72}
+2025-05-12 00:27:24,123 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:24.108958', 'heart_rate': 66}
+2025-05-12 00:27:24,130 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:24.108958', 'heart_rate': 66}
+2025-05-12 00:27:25,131 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:25.122045', 'heart_rate': 63}
+2025-05-12 00:27:25,138 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:25.122045', 'heart_rate': 63}
+2025-05-12 00:27:26,139 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:26.131075', 'heart_rate': 86}
+2025-05-12 00:27:26,145 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:26.131075', 'heart_rate': 86}
+2025-05-12 00:27:27,151 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:27.136270', 'heart_rate': 75}
+2025-05-12 00:27:27,161 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:27.136270', 'heart_rate': 75}
+2025-05-12 00:27:28,165 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:28.154948', 'heart_rate': 69}
+2025-05-12 00:27:28,170 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:28.154948', 'heart_rate': 69}
+2025-05-12 00:27:29,171 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:29.159169', 'heart_rate': 67}
+2025-05-12 00:27:29,177 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:29.159169', 'heart_rate': 67}
+2025-05-12 00:27:30,177 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:30.168362', 'heart_rate': 62}
+2025-05-12 00:27:30,185 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:30.168362', 'heart_rate': 62}
+2025-05-12 00:27:31,185 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:31.176360', 'heart_rate': 67}
+2025-05-12 00:27:31,191 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:31.176360', 'heart_rate': 67}
+2025-05-12 00:27:32,191 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:32.182086', 'heart_rate': 97}
+2025-05-12 00:27:32,197 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:32.182086', 'heart_rate': 97}
+2025-05-12 00:27:33,203 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:33.189934', 'heart_rate': 69}
+2025-05-12 00:27:33,211 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:33.189934', 'heart_rate': 69}
+2025-05-12 00:27:34,211 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:34.200931', 'heart_rate': 91}
+2025-05-12 00:27:34,217 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:34.200931', 'heart_rate': 91}
+2025-05-12 00:27:35,222 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:35.209894', 'heart_rate': 67}
+2025-05-12 00:27:35,245 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:35.209894', 'heart_rate': 67}
+2025-05-12 00:27:36,230 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:36.217855', 'heart_rate': 68}
+2025-05-12 00:27:36,239 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:36.217855', 'heart_rate': 68}
+2025-05-12 00:27:37,242 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:37.229644', 'heart_rate': 85}
+2025-05-12 00:27:37,248 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:37.229644', 'heart_rate': 85}
+2025-05-12 00:27:38,250 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:38.242246', 'heart_rate': 78}
+2025-05-12 00:27:38,256 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:38.242246', 'heart_rate': 78}
+2025-05-12 00:27:39,260 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:39.250603', 'heart_rate': 72}
+2025-05-12 00:27:39,266 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:39.250603', 'heart_rate': 72}
+2025-05-12 00:27:40,274 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:40.260091', 'heart_rate': 84}
+2025-05-12 00:27:40,296 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:40.260091', 'heart_rate': 84}
+2025-05-12 00:27:41,281 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:41.270632', 'heart_rate': 72}
+2025-05-12 00:27:41,288 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:41.270632', 'heart_rate': 72}
+2025-05-12 00:27:42,303 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:42.280556', 'heart_rate': 63}
+2025-05-12 00:27:42,346 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:42.280556', 'heart_rate': 63}
+2025-05-12 00:27:43,312 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:43.298380', 'heart_rate': 60}
+2025-05-12 00:27:43,324 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:43.298380', 'heart_rate': 60}
+2025-05-12 00:27:44,324 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:44.311010', 'heart_rate': 98}
+2025-05-12 00:27:44,330 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:44.311010', 'heart_rate': 98}
+2025-05-12 00:27:45,334 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:45.324779', 'heart_rate': 61}
+2025-05-12 00:27:45,341 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:45.324779', 'heart_rate': 61}
+2025-05-12 00:27:46,338 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:46.330238', 'heart_rate': 72}
+2025-05-12 00:27:46,344 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:46.330238', 'heart_rate': 72}
+2025-05-12 00:27:47,347 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:47.335075', 'heart_rate': 62}
+2025-05-12 00:27:47,353 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:47.335075', 'heart_rate': 62}
+2025-05-12 00:27:48,352 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:48.344274', 'heart_rate': 63}
+2025-05-12 00:27:48,358 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:48.344274', 'heart_rate': 63}
+2025-05-12 00:27:49,361 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:49.350214', 'heart_rate': 63}
+2025-05-12 00:27:49,367 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:49.350214', 'heart_rate': 63}
+2025-05-12 00:27:50,369 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:50.357050', 'heart_rate': 93}
+2025-05-12 00:27:50,377 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:50.357050', 'heart_rate': 93}
+2025-05-12 00:27:51,384 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:51.370027', 'heart_rate': 96}
+2025-05-12 00:27:51,389 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:51.370027', 'heart_rate': 96}
+2025-05-12 00:27:52,389 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:52.380440', 'heart_rate': 65}
+2025-05-12 00:27:52,397 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:27:52.380440', 'heart_rate': 65}
+2025-05-12 00:27:53,402 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:53.387291', 'heart_rate': 100}
+2025-05-12 00:27:53,423 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:53.387291', 'heart_rate': 100}
+2025-05-12 00:27:54,436 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:54.401262', 'heart_rate': 63}
+2025-05-12 00:27:54,445 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:27:54.401262', 'heart_rate': 63}
+2025-05-12 00:27:55,451 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:55.440600', 'heart_rate': 94}
+2025-05-12 00:27:55,468 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:27:55.440600', 'heart_rate': 94}
+2025-05-12 00:27:56,475 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:56.454190', 'heart_rate': 85}
+2025-05-12 00:27:56,489 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:56.454190', 'heart_rate': 85}
+2025-05-12 00:27:57,492 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:57.472963', 'heart_rate': 85}
+2025-05-12 00:27:57,508 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:57.472963', 'heart_rate': 85}
+2025-05-12 00:27:58,498 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:58.489073', 'heart_rate': 63}
+2025-05-12 00:27:58,505 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:27:58.489073', 'heart_rate': 63}
+2025-05-12 00:27:59,503 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:59.493402', 'heart_rate': 79}
+2025-05-12 00:27:59,510 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:27:59.493402', 'heart_rate': 79}
+2025-05-12 00:28:00,523 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:00.501710', 'heart_rate': 92}
+2025-05-12 00:28:00,540 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:00.501710', 'heart_rate': 92}
+2025-05-12 00:28:01,529 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:01.520103', 'heart_rate': 82}
+2025-05-12 00:28:01,535 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:01.520103', 'heart_rate': 82}
+2025-05-12 00:28:02,540 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:02.525814', 'heart_rate': 89}
+2025-05-12 00:28:02,555 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:02.525814', 'heart_rate': 89}
+2025-05-12 00:28:03,546 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:03.537593', 'heart_rate': 64}
+2025-05-12 00:28:03,554 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:03.537593', 'heart_rate': 64}
+2025-05-12 00:28:04,553 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:04.544948', 'heart_rate': 94}
+2025-05-12 00:28:04,561 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:04.544948', 'heart_rate': 94}
+2025-05-12 00:28:05,565 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:05.552982', 'heart_rate': 96}
+2025-05-12 00:28:05,572 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:05.552982', 'heart_rate': 96}
+2025-05-12 00:28:07,640 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:06.562921', 'heart_rate': 83}
+2025-05-12 00:28:07,649 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:06.562921', 'heart_rate': 83}
+2025-05-12 00:28:07,688 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:07.580148', 'heart_rate': 80}
+2025-05-12 00:28:07,695 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:07.580148', 'heart_rate': 80}
+2025-05-12 00:28:08,602 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:08.589854', 'heart_rate': 64}
+2025-05-12 00:28:08,611 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:08.589854', 'heart_rate': 64}
+2025-05-12 00:28:09,611 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:09.600251', 'heart_rate': 83}
+2025-05-12 00:28:09,621 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:09.600251', 'heart_rate': 83}
+2025-05-12 00:28:10,623 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:10.608866', 'heart_rate': 64}
+2025-05-12 00:28:10,637 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:10.608866', 'heart_rate': 64}
+2025-05-12 00:28:11,711 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:11.641817', 'heart_rate': 71}
+2025-05-12 00:28:11,721 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:11.641817', 'heart_rate': 71}
+2025-05-12 00:28:12,696 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:12.686143', 'heart_rate': 64}
+2025-05-12 00:28:12,703 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:12.686143', 'heart_rate': 64}
+2025-05-12 00:28:13,728 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:13.703291', 'heart_rate': 80}
+2025-05-12 00:28:13,750 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:13.703291', 'heart_rate': 80}
+2025-05-12 00:28:14,736 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:14.725616', 'heart_rate': 97}
+2025-05-12 00:28:14,743 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:14.725616', 'heart_rate': 97}
+2025-05-12 00:28:15,748 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:15.734162', 'heart_rate': 60}
+2025-05-12 00:28:15,757 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:15.734162', 'heart_rate': 60}
+2025-05-12 00:28:16,757 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:16.746313', 'heart_rate': 68}
+2025-05-12 00:28:16,763 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:16.746313', 'heart_rate': 68}
+2025-05-12 00:28:17,774 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:17.758466', 'heart_rate': 95}
+2025-05-12 00:28:17,798 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:17.758466', 'heart_rate': 95}
+2025-05-12 00:28:18,807 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:18.773677', 'heart_rate': 70}
+2025-05-12 00:28:18,842 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:18.773677', 'heart_rate': 70}
+2025-05-12 00:28:19,796 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:19.778509', 'heart_rate': 89}
+2025-05-12 00:28:19,822 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:19.778509', 'heart_rate': 89}
+2025-05-12 00:28:20,806 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:20.796117', 'heart_rate': 99}
+2025-05-12 00:28:20,812 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:20.796117', 'heart_rate': 99}
+2025-05-12 00:28:21,816 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:21.805815', 'heart_rate': 90}
+2025-05-12 00:28:21,827 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:21.805815', 'heart_rate': 90}
+2025-05-12 00:28:22,826 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:22.814240', 'heart_rate': 69}
+2025-05-12 00:28:22,833 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:22.814240', 'heart_rate': 69}
+2025-05-12 00:28:23,840 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:23.828261', 'heart_rate': 61}
+2025-05-12 00:28:23,850 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:23.828261', 'heart_rate': 61}
+2025-05-12 00:28:24,860 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:24.837518', 'heart_rate': 88}
+2025-05-12 00:28:24,870 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:24.837518', 'heart_rate': 88}
+2025-05-12 00:28:25,876 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:25.858694', 'heart_rate': 85}
+2025-05-12 00:28:25,883 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:25.858694', 'heart_rate': 85}
+2025-05-12 00:28:26,882 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:26.874110', 'heart_rate': 79}
+2025-05-12 00:28:26,888 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:26.874110', 'heart_rate': 79}
+2025-05-12 00:28:27,888 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:27.879483', 'heart_rate': 90}
+2025-05-12 00:28:27,895 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:27.879483', 'heart_rate': 90}
+2025-05-12 00:28:28,902 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:28.884696', 'heart_rate': 80}
+2025-05-12 00:28:28,913 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:28.884696', 'heart_rate': 80}
+2025-05-12 00:28:29,904 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:29.891386', 'heart_rate': 80}
+2025-05-12 00:28:29,915 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:29.891386', 'heart_rate': 80}
+2025-05-12 00:28:30,910 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:30.899840', 'heart_rate': 80}
+2025-05-12 00:28:30,917 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:30.899840', 'heart_rate': 80}
+2025-05-12 00:28:31,921 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:31.908837', 'heart_rate': 69}
+2025-05-12 00:28:31,932 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:31.908837', 'heart_rate': 69}
+2025-05-12 00:28:32,931 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:32.919748', 'heart_rate': 95}
+2025-05-12 00:28:32,937 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:32.919748', 'heart_rate': 95}
+2025-05-12 00:28:33,938 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:33.930224', 'heart_rate': 98}
+2025-05-12 00:28:33,946 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:33.930224', 'heart_rate': 98}
+2025-05-12 00:28:34,949 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:34.937169', 'heart_rate': 95}
+2025-05-12 00:28:34,956 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:34.937169', 'heart_rate': 95}
+2025-05-12 00:28:35,957 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:35.948783', 'heart_rate': 75}
+2025-05-12 00:28:35,964 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:35.948783', 'heart_rate': 75}
+2025-05-12 00:28:36,967 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:36.953923', 'heart_rate': 68}
+2025-05-12 00:28:36,979 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:36.953923', 'heart_rate': 68}
+2025-05-12 00:28:37,977 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:37.965802', 'heart_rate': 74}
+2025-05-12 00:28:37,984 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:37.965802', 'heart_rate': 74}
+2025-05-12 00:28:38,983 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:38.974726', 'heart_rate': 95}
+2025-05-12 00:28:38,990 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:38.974726', 'heart_rate': 95}
+2025-05-12 00:28:39,996 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:39.980331', 'heart_rate': 94}
+2025-05-12 00:28:40,012 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:39.980331', 'heart_rate': 94}
+2025-05-12 00:28:41,006 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:40.995587', 'heart_rate': 62}
+2025-05-12 00:28:41,013 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:40.995587', 'heart_rate': 62}
+2025-05-12 00:28:42,035 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:42.010020', 'heart_rate': 64}
+2025-05-12 00:28:42,057 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:42.010020', 'heart_rate': 64}
+2025-05-12 00:28:43,052 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:43.033446', 'heart_rate': 69}
+2025-05-12 00:28:43,059 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:43.033446', 'heart_rate': 69}
+2025-05-12 00:28:44,058 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:44.047029', 'heart_rate': 76}
+2025-05-12 00:28:44,068 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:44.047029', 'heart_rate': 76}
+2025-05-12 00:28:45,070 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:45.057939', 'heart_rate': 78}
+2025-05-12 00:28:45,077 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:45.057939', 'heart_rate': 78}
+2025-05-12 00:28:46,088 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:46.073904', 'heart_rate': 61}
+2025-05-12 00:28:46,095 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:46.073904', 'heart_rate': 61}
+2025-05-12 00:28:47,102 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:47.085645', 'heart_rate': 82}
+2025-05-12 00:28:47,110 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:47.085645', 'heart_rate': 82}
+2025-05-12 00:28:48,114 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:48.098652', 'heart_rate': 70}
+2025-05-12 00:28:48,134 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:48.098652', 'heart_rate': 70}
+2025-05-12 00:28:49,122 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:49.105044', 'heart_rate': 74}
+2025-05-12 00:28:49,128 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:28:49.105044', 'heart_rate': 74}
+2025-05-12 00:28:50,169 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:50.122478', 'heart_rate': 98}
+2025-05-12 00:28:50,245 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:50.122478', 'heart_rate': 98}
+2025-05-12 00:28:51,155 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:51.140942', 'heart_rate': 99}
+2025-05-12 00:28:51,163 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:51.140942', 'heart_rate': 99}
+2025-05-12 00:28:52,246 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:52.154224', 'heart_rate': 91}
+2025-05-12 00:28:52,273 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:52.154224', 'heart_rate': 91}
+2025-05-12 00:28:53,257 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:53.248289', 'heart_rate': 89}
+2025-05-12 00:28:53,264 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:53.248289', 'heart_rate': 89}
+2025-05-12 00:28:54,263 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:54.254340', 'heart_rate': 88}
+2025-05-12 00:28:54,270 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:28:54.254340', 'heart_rate': 88}
+2025-05-12 00:28:55,285 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:55.262998', 'heart_rate': 82}
+2025-05-12 00:28:55,325 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:28:55.262998', 'heart_rate': 82}
+2025-05-12 00:28:58,854 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:56.280655', 'heart_rate': 85}
+2025-05-12 00:28:58,862 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:56.280655', 'heart_rate': 85}
+2025-05-12 00:28:58,958 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:57.295450', 'heart_rate': 85}
+2025-05-12 00:28:58,965 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:57.295450', 'heart_rate': 85}
+2025-05-12 00:28:59,003 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:58.318674', 'heart_rate': 99}
+2025-05-12 00:28:59,011 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:28:58.318674', 'heart_rate': 99}
+2025-05-12 00:28:59,340 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:59.328277', 'heart_rate': 74}
+2025-05-12 00:28:59,347 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:28:59.328277', 'heart_rate': 74}
+2025-05-12 00:29:00,383 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:00.339263', 'heart_rate': 85}
+2025-05-12 00:29:00,393 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:00.339263', 'heart_rate': 85}
+2025-05-12 00:29:01,387 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:01.375383', 'heart_rate': 99}
+2025-05-12 00:29:01,393 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:01.375383', 'heart_rate': 99}
+2025-05-12 00:29:02,390 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:02.380402', 'heart_rate': 82}
+2025-05-12 00:29:02,396 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:02.380402', 'heart_rate': 82}
+2025-05-12 00:29:03,409 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:03.390128', 'heart_rate': 72}
+2025-05-12 00:29:03,425 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:03.390128', 'heart_rate': 72}
+2025-05-12 00:29:04,416 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:04.406074', 'heart_rate': 66}
+2025-05-12 00:29:04,435 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:04.406074', 'heart_rate': 66}
+2025-05-12 00:29:05,428 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:05.413720', 'heart_rate': 90}
+2025-05-12 00:29:05,444 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:05.413720', 'heart_rate': 90}
+2025-05-12 00:29:06,461 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:06.445699', 'heart_rate': 99}
+2025-05-12 00:29:06,486 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:06.445699', 'heart_rate': 99}
+2025-05-12 00:29:07,460 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:07.451585', 'heart_rate': 81}
+2025-05-12 00:29:07,469 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:07.451585', 'heart_rate': 81}
+2025-05-12 00:29:08,470 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:08.457702', 'heart_rate': 84}
+2025-05-12 00:29:08,475 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:08.457702', 'heart_rate': 84}
+2025-05-12 00:29:09,477 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:09.468575', 'heart_rate': 83}
+2025-05-12 00:29:09,484 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:09.468575', 'heart_rate': 83}
+2025-05-12 00:29:10,485 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:10.475329', 'heart_rate': 86}
+2025-05-12 00:29:10,490 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:10.475329', 'heart_rate': 86}
+2025-05-12 00:29:11,492 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:11.483675', 'heart_rate': 62}
+2025-05-12 00:29:11,499 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:11.483675', 'heart_rate': 62}
+2025-05-12 00:29:12,502 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:12.492659', 'heart_rate': 74}
+2025-05-12 00:29:12,509 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:12.492659', 'heart_rate': 74}
+2025-05-12 00:29:13,506 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:13.498399', 'heart_rate': 100}
+2025-05-12 00:29:13,515 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:13.498399', 'heart_rate': 100}
+2025-05-12 00:29:14,514 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:14.503390', 'heart_rate': 63}
+2025-05-12 00:29:14,521 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:14.503390', 'heart_rate': 63}
+2025-05-12 00:29:15,528 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:15.510858', 'heart_rate': 60}
+2025-05-12 00:29:15,543 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:15.510858', 'heart_rate': 60}
+2025-05-12 00:29:16,536 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:16.519440', 'heart_rate': 97}
+2025-05-12 00:29:16,554 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:16.519440', 'heart_rate': 97}
+2025-05-12 00:29:17,546 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:17.535666', 'heart_rate': 70}
+2025-05-12 00:29:17,553 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:17.535666', 'heart_rate': 70}
+2025-05-12 00:29:18,569 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:18.560233', 'heart_rate': 77}
+2025-05-12 00:29:18,587 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:18.560233', 'heart_rate': 77}
+2025-05-12 00:29:19,581 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:19.573221', 'heart_rate': 94}
+2025-05-12 00:29:19,587 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:19.573221', 'heart_rate': 94}
+2025-05-12 00:29:20,586 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:20.578458', 'heart_rate': 96}
+2025-05-12 00:29:20,596 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:20.578458', 'heart_rate': 96}
+2025-05-12 00:29:21,630 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:21.601416', 'heart_rate': 62}
+2025-05-12 00:29:21,646 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:21.601416', 'heart_rate': 62}
+2025-05-12 00:29:22,628 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:22.616778', 'heart_rate': 97}
+2025-05-12 00:29:22,636 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:22.616778', 'heart_rate': 97}
+2025-05-12 00:29:23,638 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:23.629508', 'heart_rate': 91}
+2025-05-12 00:29:23,644 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:23.629508', 'heart_rate': 91}
+2025-05-12 00:29:24,655 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:24.634209', 'heart_rate': 90}
+2025-05-12 00:29:24,673 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:24.634209', 'heart_rate': 90}
+2025-05-12 00:29:25,666 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:25.654256', 'heart_rate': 75}
+2025-05-12 00:29:25,673 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:25.654256', 'heart_rate': 75}
+2025-05-12 00:29:26,685 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:26.665631', 'heart_rate': 98}
+2025-05-12 00:29:26,693 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:26.665631', 'heart_rate': 98}
+2025-05-12 00:29:27,694 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:27.682944', 'heart_rate': 69}
+2025-05-12 00:29:27,702 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:27.682944', 'heart_rate': 69}
+2025-05-12 00:29:28,702 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:28.691753', 'heart_rate': 63}
+2025-05-12 00:29:28,709 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:28.691753', 'heart_rate': 63}
+2025-05-12 00:29:29,742 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:29.723389', 'heart_rate': 70}
+2025-05-12 00:29:29,768 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:29.723389', 'heart_rate': 70}
+2025-05-12 00:29:30,748 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:30.734246', 'heart_rate': 72}
+2025-05-12 00:29:30,762 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:30.734246', 'heart_rate': 72}
+2025-05-12 00:29:31,754 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:31.743539', 'heart_rate': 71}
+2025-05-12 00:29:31,769 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:31.743539', 'heart_rate': 71}
+2025-05-12 00:29:32,869 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:32.761257', 'heart_rate': 85}
+2025-05-12 00:29:32,985 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:32.761257', 'heart_rate': 85}
+2025-05-12 00:29:33,847 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:33.836402', 'heart_rate': 74}
+2025-05-12 00:29:33,857 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:33.836402', 'heart_rate': 74}
+2025-05-12 00:29:34,860 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:34.844280', 'heart_rate': 86}
+2025-05-12 00:29:34,887 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:34.844280', 'heart_rate': 86}
+2025-05-12 00:29:35,904 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:35.871688', 'heart_rate': 89}
+2025-05-12 00:29:35,925 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:35.871688', 'heart_rate': 89}
+2025-05-12 00:29:36,903 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:36.892716', 'heart_rate': 94}
+2025-05-12 00:29:36,911 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:36.892716', 'heart_rate': 94}
+2025-05-12 00:29:37,947 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:37.910659', 'heart_rate': 65}
+2025-05-12 00:29:37,960 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:37.910659', 'heart_rate': 65}
+2025-05-12 00:29:38,948 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:38.935345', 'heart_rate': 99}
+2025-05-12 00:29:38,955 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:38.935345', 'heart_rate': 99}
+2025-05-12 00:29:39,959 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:39.946019', 'heart_rate': 71}
+2025-05-12 00:29:39,980 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:39.946019', 'heart_rate': 71}
+2025-05-12 00:29:40,975 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:40.963522', 'heart_rate': 91}
+2025-05-12 00:29:40,987 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:40.963522', 'heart_rate': 91}
+2025-05-12 00:29:41,986 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:41.974070', 'heart_rate': 90}
+2025-05-12 00:29:41,994 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:41.974070', 'heart_rate': 90}
+2025-05-12 00:29:43,000 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:42.982879', 'heart_rate': 89}
+2025-05-12 00:29:43,016 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:42.982879', 'heart_rate': 89}
+2025-05-12 00:29:44,010 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:43.998695', 'heart_rate': 82}
+2025-05-12 00:29:44,023 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:43.998695', 'heart_rate': 82}
+2025-05-12 00:29:45,019 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:45.008719', 'heart_rate': 61}
+2025-05-12 00:29:45,073 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:45.008719', 'heart_rate': 61}
+2025-05-12 00:29:46,034 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:46.024001', 'heart_rate': 85}
+2025-05-12 00:29:46,043 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:46.024001', 'heart_rate': 85}
+2025-05-12 00:29:47,045 - INFO - Received: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:47.031994', 'heart_rate': 94}
+2025-05-12 00:29:47,052 - INFO - Inserted data: {'customer_id': 'b86354cc-6045-4b4c-be19-976a95382fd6', 'timestamp': '2025-05-12T00:29:47.031994', 'heart_rate': 94}
+2025-05-12 00:29:48,053 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:48.044098', 'heart_rate': 67}
+2025-05-12 00:29:48,061 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:48.044098', 'heart_rate': 67}
+2025-05-12 00:29:49,062 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:49.053145', 'heart_rate': 85}
+2025-05-12 00:29:49,069 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:49.053145', 'heart_rate': 85}
+2025-05-12 00:29:50,078 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:50.059025', 'heart_rate': 85}
+2025-05-12 00:29:50,086 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:50.059025', 'heart_rate': 85}
+2025-05-12 00:29:51,081 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:51.070911', 'heart_rate': 83}
+2025-05-12 00:29:51,089 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:51.070911', 'heart_rate': 83}
+2025-05-12 00:29:52,087 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:52.077610', 'heart_rate': 76}
+2025-05-12 00:29:52,098 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:52.077610', 'heart_rate': 76}
+2025-05-12 00:29:53,098 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:53.084110', 'heart_rate': 76}
+2025-05-12 00:29:53,111 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:53.084110', 'heart_rate': 76}
+2025-05-12 00:29:54,101 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:54.090738', 'heart_rate': 83}
+2025-05-12 00:29:54,108 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:54.090738', 'heart_rate': 83}
+2025-05-12 00:29:55,108 - INFO - Received: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:55.096322', 'heart_rate': 88}
+2025-05-12 00:29:55,115 - INFO - Inserted data: {'customer_id': '7736551e-140b-4a6b-9b7d-5e90e8210d25', 'timestamp': '2025-05-12T00:29:55.096322', 'heart_rate': 88}
+2025-05-12 00:29:56,116 - INFO - Received: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:56.105886', 'heart_rate': 90}
+2025-05-12 00:29:56,123 - INFO - Inserted data: {'customer_id': '2b642142-56be-473e-ae73-a4718e99b88f', 'timestamp': '2025-05-12T00:29:56.105886', 'heart_rate': 90}
+2025-05-12 00:29:57,122 - INFO - Received: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:57.113562', 'heart_rate': 80}
+2025-05-12 00:29:57,129 - INFO - Inserted data: {'customer_id': '64189dfe-cf26-4acf-9dce-284cfbc06063', 'timestamp': '2025-05-12T00:29:57.113562', 'heart_rate': 80}
+2025-05-12 00:29:58,130 - INFO - Received: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:58.118456', 'heart_rate': 90}
+2025-05-12 00:29:58,144 - INFO - Inserted data: {'customer_id': '1dd020fe-61a2-43c8-bfd9-5a80303218ea', 'timestamp': '2025-05-12T00:29:58.118456', 'heart_rate': 90}
