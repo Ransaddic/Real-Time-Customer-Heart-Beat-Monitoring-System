@@ -20,6 +20,10 @@ Real-Time-Customer-Heart-Beat-Monitoring-System/
 │   ├── heartbeat_dashboard.py     # Streamlit dashboard to visualize heartbeat data
 │   ├── docker-compose.yml         # Docker Compose for PostgreSQL container
 │   └── postgres_setup.sql         # SQL script to set up heartbeat_data table in PostgreSQL
+|
+|__ Readme.md                      # This file
+|
+|__ requirements.txt               # contains all libraries to be installed
 ```
 
 ---
@@ -88,15 +92,5 @@ Tabular view of the latest 100 records
 
 ## 🛠️ Requirements
 
-pip install -r requirements.txt
-
-requirements.txt
-
-streamlit
-streamlit-autorefresh
-psycopg2
-pandas
-plotly
-kafka-python
-faker
-
+``pip install -r requirements.txt
+``

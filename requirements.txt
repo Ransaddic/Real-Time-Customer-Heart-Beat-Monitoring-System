@@ -1,0 +1,7 @@
+streamlit 
+streamlit-autorefresh
+psycopg2
+pandas
+plotly
+kafka-python
+faker
