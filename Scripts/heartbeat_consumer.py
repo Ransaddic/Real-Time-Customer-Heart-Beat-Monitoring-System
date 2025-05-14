@@ -60,9 +60,10 @@ def main():
     conn = connect_to_db()
     cursor = conn.cursor()
 
+    bootstrap_servers = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
     consumer = KafkaConsumer(
         'heartbeat',
-        bootstrap_servers=['localhost:9092'],
+        bootstrap_servers=bootstrap_servers,
         value_deserializer=lambda m: json.loads(m.decode('utf-8')),
         auto_offset_reset='earliest',
         enable_auto_commit=True,

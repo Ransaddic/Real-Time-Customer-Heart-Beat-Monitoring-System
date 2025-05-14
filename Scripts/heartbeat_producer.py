@@ -6,6 +6,7 @@ import time
 import random
 from faker import Faker
 from datetime import datetime
+import os
 
 
 
@@ -19,10 +20,11 @@ logging.basicConfig(
 
 # Initialize Faker and Kafka producer
 fake = Faker()
+bootstrap_servers = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 
 try:
     producer = KafkaProducer(
-        bootstrap_servers=['localhost:9092'],
+        bootstrap_servers=bootstrap_servers,
         value_serializer=lambda x: json.dumps(x).encode('utf-8')
     )
     logging.info("Kafka Producer connected successfully.")

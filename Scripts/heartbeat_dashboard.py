@@ -5,8 +5,9 @@ import psycopg2
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
+
 
 load_dotenv()  # Load variables from .env file
 

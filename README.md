@@ -1,99 +1,76 @@
 
-# 💓 Real-Time Customer Heart Beat Monitoring System
+# Real-Time Customer Heart Beat Monitoring System
 
-This project simulates and monitors real-time heart rate data for multiple customers. It includes a synthetic data generator, real-time Kafka streaming with Python, PostgreSQL for storage (via Docker), and a Streamlit dashboard for visualization.
+This project simulates and monitors customer heartbeats in real-time using Kafka, PostgreSQL, and Streamlit.
+
+## 📦 Project Structure
+
+```
+├── docker-compose.yml
+├── dashboard/
+│   ├── Dockerfile
+├── producer/
+│   ├── Dockerfile
+├── consumer/
+│   ├── Dockerfile
+├── scripts/
+│   ├── heartbeat_producer.py
+│   ├── heartbeat_consumer.py
+│   ├── heartbeat_dashboard.py
+│   ├── wait-for-kafka.sh
+├── requirements.txt
+```
+
+## 🚀 Features
+
+- Simulates synthetic heartbeat data using a Kafka producer.
+- Consumes and stores heartbeat data into PostgreSQL.
+- Visualizes real-time data via a Streamlit dashboard.
+
+## 🛠️ Tech Stack
+
+- **Python 3.10**
+- **Apache Kafka**
+- **PostgreSQL**
+- **Streamlit**
+- **Docker & Docker Compose**
+
+## ⚙️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-repo/Real-Time-Customer-Heart-Beat-Monitoring-System.git
+cd Real-Time-Customer-Heart-Beat-Monitoring-System
+```
+
+### 2. Run with Docker Compose
+
+```bash
+docker-compose up --build
+```
+
+### 3. Access the Dashboard
+
+Go to [http://localhost:8501](http://localhost:8501) in your browser.
+
+## 🧪 Test the Kafka Connection
+
+```bash
+docker exec -it heartbeat_producer ping kafka
+```
+
+## 📝 Notes
+
+- Make sure Docker is running.
+- PostgreSQL is accessible as `db` inside the Docker network.
+- The `wait-for-kafka.sh` script ensures services wait for Kafka to be ready.
+
+## 🧯 Troubleshooting
+
+- `NoBrokersAvailable`: Ensure Kafka and Zookeeper are up before producer/consumer.
+- `psycopg2.OperationalError`: Ensure `DB_HOST` matches service name in docker-compose (use `db`).
 
 ---
 
-## 📁 Project Structure
-
-```
-Real-Time-Customer-Heart-Beat-Monitoring-System/
-│
-├── logs/
-│   ├── consumer.log                # Log file for Kafka consumer events
-│   └── producer.log                # Log file for Kafka producer events
-│
-├── Scripts/
-│   ├── heartbeat_consumer.py      # Consumes data from Kafka, validates, and inserts into PostgreSQL
-│   ├── heartbeat_producer.py      # Generates synthetic heartbeat data and sends to Kafka
-│   ├── heartbeat_dashboard.py     # Streamlit dashboard to visualize heartbeat data
-│   └── postgres_setup.sql         # SQL script to set up heartbeat_data table in PostgreSQL
-|
-|__ Readme.md                      # This file
-|
-|__ requirements.txt               # contains all libraries to be installed
-|
-|__ .env                           # contains postgres credentials
-|
-|── docker-compose.yml         # Docker Compose for PostgreSQL container
-```
-
----
-
-## ⚙️ Components
-
-* Kafka Producer: Simulates heart rate data for 5 customers and sends it to a Kafka topic.
-
-* Kafka Consumer: Reads data from Kafka, validates it, and stores it in PostgreSQL.
-
-* PostgreSQL: Stores the validated heart rate data (Dockerized).
-
-* Streamlit Dashboard: Displays real-time plots and summary stats for each customer.
-
-## 🐳 Docker Setup (PostgreSQL Only)
-
-### 1. Start PostgreSQL Container
-
-Run the PostgreSQL container using Docker Compose:
-
-``docker-compose up -d
-``
-
-### 2. Apply SQL Setup
-
-### After the container is running, set up the database:
-
-``docker exec -i <container_id> psql -U postgres -d heart_monitor < Scripts/postgres_setup.sql
-``
-
-## ▶️ How to Run
-
-### Start Kafka & Zookeeper (must be pre-installed)
-
-``bin/zookeeper-server-start.sh config/zookeeper.properties
-``
-
-``bin/kafka-server-start.sh config/server.properties
-``
-### 1. Producer
-
-``python Scripts/heartbeat_producer.py
-``
-
-### 2. Consumer
-
-``python Scripts/heartbeat_consumer.py
-``
-
-### 3. Dashboard
-
-``streamlit run Scripts/heartbeat_dashboard.py
-``
-
-## 📊 Dashboard Features
-
-Real-time updates every 5 seconds
-
-Customer selection
-
-Summary metrics: Mean, Min, Max BPM
-
-Line plot of heart rate trends
-
-Tabular view of the latest 100 records
-
-## 🛠️ Requirements
-
-``pip install -r requirements.txt
-``
+© 2025 Real-Time Heart Beat Monitoring System
