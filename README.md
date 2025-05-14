@@ -7,18 +7,17 @@ This project simulates and monitors customer heartbeats in real-time using Kafka
 
 ```
 ├── docker-compose.yml
-├── dashboard/
+├── docker/
 │   ├── Dockerfile
-├── producer/
-│   ├── Dockerfile
-├── consumer/
-│   ├── Dockerfile
+│   ├── postgres_setup.sql
 ├── scripts/
 │   ├── heartbeat_producer.py
 │   ├── heartbeat_consumer.py
 │   ├── heartbeat_dashboard.py
 │   ├── wait-for-kafka.sh
 ├── requirements.txt
+|__Readme
+|
 ```
 
 ## 🚀 Features
